@@ -6,7 +6,7 @@ on:
     - cron: '0 3 * * *'
 
 jobs:
-  external-benchmark:
+  benchmark:
     if: github.repository == 'poolifier/benchmark'
     runs-on: [self-hosted]
     steps:

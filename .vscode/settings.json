@@ -1,6 +1,9 @@
 {
-    "cSpell.words": [
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "cSpell.words": [
         "benoit",
         "poolifier"
-    ]
+  ]
 }
