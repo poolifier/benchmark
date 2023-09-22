@@ -26,7 +26,7 @@ jobs:
       - name: Run benchmark
         uses: blacha/hyperfine-action@v1
         with:
-          benchmark-config: '.hyperfine.json'
+          benchmark-config: './.hyperfine.json'
           count: 500
           benchmark-branch: 'gh-pages'
           benchmark-output: './benchmarks.json'
