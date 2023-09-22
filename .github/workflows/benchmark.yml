@@ -7,7 +7,7 @@ on:
 
 jobs:
   external-benchmark:
-    if: github.repository == 'poolifier/bechmark'
+    if: github.repository == 'poolifier/benchmark'
     runs-on: [self-hosted, external-benchmark]
     steps:
       - name: Checkout
