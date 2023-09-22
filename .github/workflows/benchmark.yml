@@ -31,5 +31,5 @@ jobs:
           benchmark-branch: 'gh-pages'
           benchmark-output: './benchmarks.json'
           benchmark-html: './benchmarks.html'
-          master-branch: 'master'
+          master-branch: 'main'
           github-token: ${{ secrets.GITHUB_TOKEN }}

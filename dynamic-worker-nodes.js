@@ -1,6 +1,6 @@
 'use strict'
 const WorkerNodes = require('worker-nodes')
-const { BenchmarkDefaults } = require('./utils.mjs')
+const { BenchmarkDefaults, executeAsyncFn } = require('./utils')
 
 const size = parseInt(process.env.POOL_SIZE) || BenchmarkDefaults.poolSize
 const numIterations =
@@ -33,11 +33,5 @@ async function run () {
   process.exit()
 }
 (async () => {
-  try {
-    await run()
-  } catch (e) {
-    console.error(e)
-    // eslint-disable-next-line n/no-process-exit
-    process.exit(1)
-  }
+  await executeAsyncFn(run)
 })()
