@@ -3,7 +3,7 @@
 To run the benchmark versus other pools you will need to:
 
 - [Install hyperfine](https://github.com/sharkdp/hyperfine#installation)
-- Clone the [benchmark repository](https://github/poolifier/benchmark)
+- Clone the [benchmark repository](https://github.com/poolifier/benchmark)
 - Run `pnpm install` in the benchmark repository
 - Run the `./bench.sh` script
 
