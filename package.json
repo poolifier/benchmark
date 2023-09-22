@@ -3,8 +3,6 @@
   "name": "poolifier-benchmark-versus-other-worker-pools",
   "version": "1.0.0",
   "description": "This project contains benchmark for the most popular and used Node.js worker_threads/cluster worker pools implementations",
-  "private": true,
-  "main": "index.js",
   "author": "pioardi",
   "engines": {
     "node": ">=16.14.0",
