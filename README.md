@@ -3,7 +3,8 @@
 To run the benchmark versus other pools you will need to:
 
 - [Install hyperfine](https://github.com/sharkdp/hyperfine#installation)
-- Run `pnpm install` into the `versus-external-pools` folder
-- Run the `./bench.sh` script into the `versus-external-pools` folder
+- Clone the [benchmark repository](https://github/poolifier/benchmark)
+- Run `pnpm install`
+- Run the `./bench.sh`
 
-> :warning: **Please be sure to use a quiet PC when you run the benchmarks**
+> :warning: **Please be sure to use a quiet PC when you run the benchmark**
