@@ -30,6 +30,6 @@ jobs:
           count: 500
           benchmark-branch: 'gh-pages'
           benchmark-output: './benchmarks.json'
-          benchmark-html: './benchmarks.html'
+          benchmark-html: './index.html'
           master-branch: 'main'
           github-token: ${{ secrets.GITHUB_TOKEN }}
