@@ -19,6 +19,9 @@ const workerPool = workerpool.pool(
   }
 )
 
+/**
+ *
+ */
 async function run () {
   const promises = new Set()
   for (let i = 0; i < numIterations; i++) {

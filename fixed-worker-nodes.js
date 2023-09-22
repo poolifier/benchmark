@@ -20,6 +20,9 @@ const workerNodes = new WorkerNodes(
   }
 )
 
+/**
+ *
+ */
 async function run () {
   const promises = new Set()
   for (let i = 0; i < numIterations; i++) {
@@ -29,7 +32,6 @@ async function run () {
   // eslint-disable-next-line n/no-process-exit
   process.exit()
 }
-
 (async () => {
   try {
     await run()

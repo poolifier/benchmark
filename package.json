@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "poolifier-benchmark-versus-other-worker-pools",
   "version": "1.0.0",
-  "description": "This project contains benchmark for the most used and popular Node.js worker_threads/cluster worker pools implementations",
+  "description": "This project contains benchmark for the most popular and used Node.js worker_threads/cluster worker pools implementations",
   "private": true,
   "main": "index.js",
   "author": "pioardi",
@@ -15,6 +15,11 @@
     "pnpm": "8.7.6"
   },
   "scripts": {
+    "preinstall": "npx --yes only-allow pnpm",
+    "prepare": "node prepare.js",
+    "format": "biome format . --write; standard . --fix",
+    "lint": "eslint . --cache",
+    "lint:fix": "eslint . --cache --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -25,5 +30,19 @@
     "tinypool": "0.8.1",
     "worker-nodes": "2.6.0",
     "workerpool": "6.5.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.2.2",
+    "eslint": "^8.49.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-define-config": "^1.23.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsdoc": "^46.8.2",
+    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "standard": "^17.1.0"
   }
 }

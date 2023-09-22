@@ -17,6 +17,9 @@ const piscina = new Piscina({
   idleTimeout: 60000 // this is the same as poolifier default
 })
 
+/**
+ *
+ */
 async function run () {
   const promises = new Set()
   for (let i = 0; i < numIterations; i++) {

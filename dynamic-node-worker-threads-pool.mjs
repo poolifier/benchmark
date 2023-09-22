@@ -13,6 +13,9 @@ const data = {
 
 const dynamicPool = new DynamicPool(size)
 
+/**
+ *
+ */
 async function run () {
   const promises = new Set()
   for (let i = 0; i < numIterations; i++) {

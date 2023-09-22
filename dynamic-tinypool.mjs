@@ -1,4 +1,4 @@
-import Tinypool from 'tinypool'
+import { Tinypool } from 'tinypool'
 import { BenchmarkDefaults, executeAsyncFn } from './utils.mjs'
 
 const size = parseInt(process.env.POOL_SIZE) || BenchmarkDefaults.poolSize
@@ -17,6 +17,9 @@ const tinypool = new Tinypool({
   idleTimeout: 60000 // this is the same as poolifier default
 })
 
+/**
+ *
+ */
 async function run () {
   const promises = new Set()
   for (let i = 0; i < numIterations; i++) {
