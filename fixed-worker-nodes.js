@@ -32,6 +32,7 @@ async function run () {
   // eslint-disable-next-line n/no-process-exit
   process.exit()
 }
+
 (async () => {
   await executeAsyncFn(run)
 })()
