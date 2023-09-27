@@ -3,7 +3,23 @@
   "name": "poolifier-benchmark-versus-other-worker-pools",
   "version": "1.0.0",
   "description": "This project contains benchmark for the most popular and used Node.js worker_threads/cluster worker pools implementations",
-  "author": "pioardi",
+  "author": {
+    "name": "Alessandro Pio Ardizio",
+    "email": "alessandroardizio94@gmail.com",
+    "url": "https://github.com/pioardi"
+  },
+  "contributors": [
+    {
+      "name": "Christopher Quadflieg",
+      "email": "chrissi92@hotmail.de",
+      "url": "https://github.com/Shinigami92"
+    },
+    {
+      "name": "Jérôme Benoit",
+      "email": "jerome.benoit@piment-noir.org",
+      "url": "https://github.com/jerome-benoit"
+    }
+  ],
   "engines": {
     "node": ">=16.14.0",
     "pnpm": ">=8.6.0"
