@@ -18,6 +18,6 @@ const BenchmarkDefaults = {
 }
 
 module.exports = {
-  executeAsyncFn,
-  BenchmarkDefaults
+  BenchmarkDefaults,
+  executeAsyncFn
 }
