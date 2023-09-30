@@ -1,6 +1,6 @@
 'use strict'
 const WorkerNodes = require('worker-nodes')
-const { BenchmarkDefaults, executeAsyncFn } = require('./utils')
+const { BenchmarkDefaults, executeAsyncFn } = require('./utils.js')
 
 const size = parseInt(process.env.POOL_SIZE) || BenchmarkDefaults.poolSize
 const numIterations =
