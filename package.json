@@ -43,7 +43,7 @@
     "poolifier": "3.0.0",
     "tinypool": "0.8.1",
     "worker-nodes": "2.6.0",
-    "workerpool": "6.5.0"
+    "workerpool": "6.5.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.2.2",
