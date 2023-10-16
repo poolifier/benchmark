@@ -26,7 +26,7 @@
   },
   "volta": {
     "node": "18.18.2",
-    "pnpm": "8.9.0"
+    "pnpm": "8.9.2"
   },
   "scripts": {
     "preinstall": "npx --yes only-allow pnpm",
@@ -47,8 +47,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.2.2",
-    "@commitlint/cli": "^17.7.2",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
     "eslint": "^8.51.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-define-config": "^1.24.1",
