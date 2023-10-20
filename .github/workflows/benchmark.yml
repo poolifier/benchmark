@@ -22,7 +22,7 @@ jobs:
           node-version: '20.x'
           cache: 'pnpm'
       - name: Install dependencies
-        run: pnpm install --ignore-scripts
+        run: pnpm install --ignore-scripts --frozen-lockfile
       - name: Run benchmark
         uses: blacha/hyperfine-action@v1
         with:
