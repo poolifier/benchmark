@@ -9,7 +9,7 @@ jobs:
   benchmark:
     if: github.repository == 'poolifier/benchmark'
     runs-on:
-      group: Default
+      group: default
       labels: [self-hosted, benchmark]
     steps:
       - name: Checkout
