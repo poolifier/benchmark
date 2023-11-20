@@ -39,7 +39,7 @@
   "dependencies": {
     "nanothreads": "0.3.7",
     "node-worker-threads-pool": "1.5.1",
-    "piscina": "4.1.0",
+    "piscina": "4.2.0",
     "poolifier": "3.0.5",
     "tinypool": "0.8.1",
     "worker-nodes": "2.6.0",
