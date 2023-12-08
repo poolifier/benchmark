@@ -11,4 +11,4 @@ To run the benchmark versus other worker pools you will need to:
 
 > :warning: **Please be sure to use a quiet PC when you run the benchmark**
 
-## [Results](https://poolifier.github.io/benchmark)
+## [Results](https://bencher.dev/perf/poolifier-benchmark)
