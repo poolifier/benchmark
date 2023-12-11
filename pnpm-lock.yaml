@@ -15,8 +15,8 @@ dependencies:
     specifier: 4.2.0
     version: 4.2.0
   poolifier:
-    specifier: 3.0.10
-    version: 3.0.10
+    specifier: 3.0.11
+    version: 3.0.11
   tinypool:
     specifier: 0.8.1
     version: 0.8.1
@@ -42,7 +42,7 @@ devDependencies:
     version: 8.55.0
   eslint-config-standard:
     specifier: ^17.1.0
-    version: 17.1.0(eslint-plugin-import@2.29.0)(eslint-plugin-n@16.3.1)(eslint-plugin-promise@6.1.1)(eslint@8.55.0)
+    version: 17.1.0(eslint-plugin-import@2.29.0)(eslint-plugin-n@16.4.0)(eslint-plugin-promise@6.1.1)(eslint@8.55.0)
   eslint-define-config:
     specifier: ^2.0.0
     version: 2.0.0
@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^46.9.0
     version: 46.9.0(eslint@8.55.0)
   eslint-plugin-n:
-    specifier: ^16.3.1
-    version: 16.3.1(eslint@8.55.0)
+    specifier: ^16.4.0
+    version: 16.4.0(eslint@8.55.0)
   eslint-plugin-promise:
     specifier: ^6.1.1
     version: 6.1.1(eslint@8.55.0)
@@ -367,7 +367,7 @@ packages:
       ajv: 6.12.6
       debug: 4.3.4
       espree: 9.6.1
-      globals: 13.23.0
+      globals: 13.24.0
       ignore: 5.3.0
       import-fresh: 3.3.0
       js-yaml: 4.1.0
@@ -1073,7 +1073,7 @@ packages:
       eslint-plugin-promise: 6.1.1(eslint@8.55.0)
     dev: true
 
-  /eslint-config-standard@17.1.0(eslint-plugin-import@2.29.0)(eslint-plugin-n@16.3.1)(eslint-plugin-promise@6.1.1)(eslint@8.55.0):
+  /eslint-config-standard@17.1.0(eslint-plugin-import@2.29.0)(eslint-plugin-n@16.4.0)(eslint-plugin-promise@6.1.1)(eslint@8.55.0):
     resolution: {integrity: sha512-IwHwmaBNtDK4zDHQukFDW5u/aTb8+meQWZvNFWkiGmbWjD6bqyuSSBxxXKkCftCUzc1zwCH2m/baCNDLGmuO5Q==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -1084,7 +1084,7 @@ packages:
     dependencies:
       eslint: 8.55.0
       eslint-plugin-import: 2.29.0(eslint@8.55.0)
-      eslint-plugin-n: 16.3.1(eslint@8.55.0)
+      eslint-plugin-n: 16.4.0(eslint@8.55.0)
       eslint-plugin-promise: 6.1.1(eslint@8.55.0)
     dev: true
 
@@ -1225,8 +1225,8 @@ packages:
       semver: 7.5.4
     dev: true
 
-  /eslint-plugin-n@16.3.1(eslint@8.55.0):
-    resolution: {integrity: sha512-w46eDIkxQ2FaTHcey7G40eD+FhTXOdKudDXPUO2n9WNcslze/i/HT2qJ3GXjHngYSGDISIgPNhwGtgoix4zeOw==}
+  /eslint-plugin-n@16.4.0(eslint@8.55.0):
+    resolution: {integrity: sha512-IkqJjGoWYGskVaJA7WQuN8PINIxc0N/Pk/jLeYT4ees6Fo5lAhpwGsYek6gS9tCUxgDC4zJ+OwY2bY/6/9OMKQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       eslint: '>=7.0.0'
@@ -1346,7 +1346,7 @@ packages:
       file-entry-cache: 6.0.1
       find-up: 5.0.0
       glob-parent: 6.0.2
-      globals: 13.23.0
+      globals: 13.24.0
       graphemer: 1.4.0
       ignore: 5.3.0
       imurmurhash: 0.1.4
@@ -1626,8 +1626,8 @@ packages:
       ini: 1.3.8
     dev: true
 
-  /globals@13.23.0:
-    resolution: {integrity: sha512-XAmF0RjlrjY23MA51q3HltdlGxUpXPvg0GioKiD9X6HD28iMjo2dKC8Vqwm7lne4GNr78+RHTfliktR6ZH09wA==}
+  /globals@13.24.0:
+    resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
@@ -2663,8 +2663,8 @@ packages:
       load-json-file: 5.3.0
     dev: true
 
-  /poolifier@3.0.10:
-    resolution: {integrity: sha512-2Zg/roMtBd9CMst1D0o/1LZjvfbg50tuNWlOrhxu3oNn6fiakCbvZIk7OaHLfjNhwuYzKowck5+R5WS8M74xpg==}
+  /poolifier@3.0.11:
+    resolution: {integrity: sha512-7Y29WNMbnXfG6iW3U6yeQD7B8h7NP3BqoDae1sf/if1exF0ONJaDwlL5s4cGA9qcwvzMTaTsLhAbHwbv58+1Rg==}
     engines: {node: '>=18.0.0', pnpm: '>=8.6.0'}
     requiresBuild: true
     dev: false
