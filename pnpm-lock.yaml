@@ -12,11 +12,11 @@ dependencies:
     specifier: 1.5.1
     version: 1.5.1
   piscina:
-    specifier: 4.2.0
-    version: 4.2.0
+    specifier: 4.2.1
+    version: 4.2.1
   poolifier:
-    specifier: 3.0.13
-    version: 3.0.13
+    specifier: 3.0.14
+    version: 3.0.14
   tinypool:
     specifier: 0.8.1
     version: 0.8.1
@@ -2646,8 +2646,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /piscina@4.2.0:
-    resolution: {integrity: sha512-/Yq6CLchvi5UQ6YGeiYHIJQV09VcZ5eYuNVS/YPkpxlxKrB4tEbIyc6j8F5b0jCP6tHdiji1Gos4fapc7q1csg==}
+  /piscina@4.2.1:
+    resolution: {integrity: sha512-LShp0+lrO+WIzB9LXO+ZmO4zGHxtTJNZhEO56H9SSu+JPaUQb6oLcTCzWi5IL2DS8/vIkCE88ElahuSSw4TAkA==}
     dependencies:
       hdr-histogram-js: 2.0.3
       hdr-histogram-percentiles-obj: 3.0.0
@@ -2663,8 +2663,8 @@ packages:
       load-json-file: 5.3.0
     dev: true
 
-  /poolifier@3.0.13:
-    resolution: {integrity: sha512-OvO5FlZ54BZo6EyO405346SVSJtBEAENLI7mCWIfNrPJdULYjyWu7cIjrjStZR+AMNjqIJIkVfOM8c4SrQ+W4A==}
+  /poolifier@3.0.14:
+    resolution: {integrity: sha512-bER0wR3NADyvQpexHY6fbVd+rikk4hxt1tzIhKkwOcoJcqkoD+eAtN+2sVbAIUYFqwhNdeaZQwmpxcDlZ2jv3Q==}
     engines: {node: '>=18.0.0', pnpm: '>=8.6.0'}
     requiresBuild: true
     dev: false
