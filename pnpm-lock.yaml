@@ -15,8 +15,8 @@ dependencies:
     specifier: 4.2.1
     version: 4.2.1
   poolifier:
-    specifier: 3.1.2
-    version: 3.1.2
+    specifier: 3.1.6
+    version: 3.1.6
   tinypool:
     specifier: 0.8.1
     version: 0.8.1
@@ -2663,8 +2663,8 @@ packages:
       load-json-file: 5.3.0
     dev: true
 
-  /poolifier@3.1.2:
-    resolution: {integrity: sha512-AmNX99iH34/K9gWmQNC6MlyJ7khWWcapkySWbpKT0LHtKgrvT0vhuIAXyNP1sCbIbaxVurJDYnYlA2N+DjtHsw==}
+  /poolifier@3.1.6:
+    resolution: {integrity: sha512-OXISds0E1+gJ66HMIaU0NQOeLmhuI5LwS/VWZd392rreuEjV8MrapvKdtHujFcnOGSd4qJiyknF8nr8AMqVFQA==}
     engines: {node: '>=18.0.0', pnpm: '>=8.6.0'}
     requiresBuild: true
     dev: false
