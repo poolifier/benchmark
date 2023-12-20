@@ -40,10 +40,10 @@
     "nanothreads": "0.3.7",
     "node-worker-threads-pool": "1.5.1",
     "piscina": "4.2.1",
-    "poolifier": "3.1.6",
+    "poolifier": "3.1.7",
     "tinypool": "0.8.1",
     "worker-nodes": "2.6.0",
-    "workerpool": "9.0.2"
+    "workerpool": "9.0.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
@@ -54,7 +54,7 @@
     "eslint-define-config": "^2.0.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsdoc": "^46.9.1",
-    "eslint-plugin-n": "^16.4.0",
+    "eslint-plugin-n": "^16.5.0",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
