@@ -15,8 +15,8 @@ dependencies:
     specifier: 4.2.1
     version: 4.2.1
   poolifier:
-    specifier: 3.1.8
-    version: 3.1.8
+    specifier: 3.1.9
+    version: 3.1.9
   tinypool:
     specifier: 0.8.1
     version: 0.8.1
@@ -1430,7 +1430,7 @@ packages:
       human-signals: 5.0.0
       is-stream: 3.0.0
       merge-stream: 2.0.0
-      npm-run-path: 5.1.0
+      npm-run-path: 5.2.0
       onetime: 6.0.0
       signal-exit: 4.1.0
       strip-final-newline: 3.0.0
@@ -2421,8 +2421,8 @@ packages:
       path-key: 3.1.1
     dev: true
 
-  /npm-run-path@5.1.0:
-    resolution: {integrity: sha512-sJOdmRGrY2sjNTRMbSvluQqg+8X7ZK61yvzBEIDhz4f8z1TZFYABsqjjCBd/0PUNE9M6QDgHJXQkGUEm7Q+l9Q==}
+  /npm-run-path@5.2.0:
+    resolution: {integrity: sha512-W4/tgAXFqFA0iL7fk0+uQ3g7wkL8xJmx3XdK0VGb4cHW//eZTtKGvFBBoRKVTpY7n6ze4NL9ly7rgXcHufqXKg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       path-key: 4.0.0
@@ -2663,8 +2663,8 @@ packages:
       load-json-file: 5.3.0
     dev: true
 
-  /poolifier@3.1.8:
-    resolution: {integrity: sha512-wcB40at4TWB1srBDiC1mnhk6I8/K89baDursWNfp7YYkT3yF/h8QKXnqwjzrjZa6wqtPaTLyvmO/moOdI0NpGQ==}
+  /poolifier@3.1.9:
+    resolution: {integrity: sha512-J58FL2QlPZkVbKb1C/RkMlKJytQh88BOhQKV0DS6zmkrTW4WNux8320EnKOh0j2BCZJnD3y4waQcgZgEo8/Ckw==}
     engines: {node: '>=18.0.0', pnpm: '>=8.6.0'}
     requiresBuild: true
     dev: false
