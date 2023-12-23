@@ -8,9 +8,6 @@ dependencies:
   nanothreads:
     specifier: 0.3.7
     version: 0.3.7
-  node-worker-threads-pool:
-    specifier: 1.5.1
-    version: 1.5.1
   piscina:
     specifier: 4.2.1
     version: 4.2.1
@@ -2390,10 +2387,6 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
-
-  /node-worker-threads-pool@1.5.1:
-    resolution: {integrity: sha512-7TXAhpMm+jO4MfESxYLtMGSnJWv+itdNHMdaFmeZuPXxwFGU90mtEB42BciUULXOUAxYBfXILAuvrSG3rQZ7mw==}
-    dev: false
 
   /normalize-package-data@2.5.0:
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}

@@ -11,6 +11,4 @@ hyperfine --export-markdown BENCH-100000.md --export-json BENCH-100000.json --mi
   'node fixed-workerpool.mjs' \
   'node dynamic-worker-nodes.js' \
   'node fixed-worker-nodes.js' \
-  'node dynamic-node-worker-threads-pool.mjs' \
-  'node static-node-worker-threads-pool.mjs' \
   'node fixed-nanothreads.mjs'

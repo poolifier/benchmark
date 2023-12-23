@@ -1,19 +1,20 @@
 'use strict'
+const { randomInt } = require('node:crypto')
+const {
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  rmSync,
+  writeFileSync
+} = require('node:fs')
+
 /**
  * The task function to execute during pools benchmarks.
- * NOTE: This function requires to be self-contained, thread-safe and re-entrant (node-worker-threads-pool requirement).
+ * NOTE: This function requires to be thread-safe.
  * @param {*} data The worker data.
  * @returns {*} The result.
  */
 const functionToBench = data => {
-  const { randomInt } = require('node:crypto')
-  const {
-    existsSync,
-    mkdirSync,
-    readFileSync,
-    rmSync,
-    writeFileSync
-  } = require('node:fs')
   const TaskTypes = {
     CPU_INTENSIVE: 'CPU_INTENSIVE',
     IO_INTENSIVE: 'IO_INTENSIVE'
