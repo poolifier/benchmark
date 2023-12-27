@@ -1,6 +1,6 @@
 'use strict'
 const WorkerNodes = require('worker-nodes')
-const { BenchmarkDefaults, executeAsyncFn } = require('./utils.js')
+const { BenchmarkDefaults, executeAsyncFn } = require('./utils.cjs')
 
 const size = parseInt(process.env.POOL_SIZE) || BenchmarkDefaults.poolSize
 const numIterations =
@@ -12,7 +12,7 @@ const data = {
 }
 
 const workerNodes = new WorkerNodes(
-  require.resolve('./workers/worker-nodes/function-to-bench-worker'),
+  require.resolve('./workers/worker-nodes/function-to-bench-worker.cjs'),
   {
     minWorkers: Math.floor(size / 2),
     maxWorkers: size,

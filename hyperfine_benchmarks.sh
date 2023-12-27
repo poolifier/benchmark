@@ -9,6 +9,6 @@ hyperfine --export-markdown BENCH-100000.md --export-json BENCH-100000.json --mi
   'node fixed-tinypool.mjs' \
   'node dynamic-workerpool.mjs' \
   'node fixed-workerpool.mjs' \
-  'node dynamic-worker-nodes.js' \
-  'node fixed-worker-nodes.js' \
+  'node dynamic-worker-nodes.cjs' \
+  'node fixed-worker-nodes.cjs' \
   'node fixed-nanothreads.mjs'

@@ -1,5 +1,5 @@
 import workerpool from 'workerpool'
-import functionToBench from '../../functions/function-to-bench.js'
+import functionToBench from '../../functions/function-to-bench.cjs'
 
 const functionToBenchWrapper = (testName, taskType, taskSize) => {
   return functionToBench({

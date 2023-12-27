@@ -1,2 +1,2 @@
-import functionToBench from '../../functions/function-to-bench.js'
+import functionToBench from '../../functions/function-to-bench.cjs'
 export default functionToBench

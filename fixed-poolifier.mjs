@@ -1,5 +1,5 @@
 import { FixedThreadPool } from 'poolifier'
-import { BenchmarkDefaults, executeAsyncFn } from './utils.js'
+import { BenchmarkDefaults, executeAsyncFn } from './utils.cjs'
 
 const size = parseInt(process.env.POOL_SIZE) || BenchmarkDefaults.poolSize
 const numIterations =
