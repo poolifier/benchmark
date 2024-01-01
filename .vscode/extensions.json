@@ -4,7 +4,6 @@
   "recommendations": [
     "EditorConfig.EditorConfig",
     "eamodio.gitlens",
-    "standard.vscode-standard",
     "streetsidesoftware.code-spell-checker"
   ]
 }
