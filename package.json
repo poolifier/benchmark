@@ -48,7 +48,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
     "@commitlint/cli": "^18.4.4",
-    "@commitlint/config-conventional": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.4",
     "eslint": "^8.56.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-define-config": "^2.1.0",
