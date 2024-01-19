@@ -21,8 +21,8 @@ dependencies:
     specifier: 2.6.0
     version: 2.6.0
   workerpool:
-    specifier: 9.0.4
-    version: 9.0.4
+    specifier: 9.1.0
+    version: 9.1.0
 
 devDependencies:
   '@biomejs/biome':
@@ -3346,8 +3346,8 @@ packages:
       msgpack-lite: 0.1.26
     dev: false
 
-  /workerpool@9.0.4:
-    resolution: {integrity: sha512-EDeF5re9hGJ88HH2vYDuvG0rV3+I0hlP+9lLQYYzXykW0kjDGyuw21vR1rRWUqNy9x+o5yPlqmyzpHvELzhyeQ==}
+  /workerpool@9.1.0:
+    resolution: {integrity: sha512-+wRWfm9yyJghvXLSHMQj3WXDxHbibHAQmRrWbqKBfy0RjftZNeQaW+Std5bSYc83ydkrxoPTPOWVlXUR9RWJdQ==}
     dev: false
 
   /wrap-ansi@7.0.0:
