@@ -12,8 +12,8 @@ dependencies:
     specifier: 4.3.1
     version: 4.3.1
   poolifier:
-    specifier: 3.1.19
-    version: 3.1.19
+    specifier: 3.1.20
+    version: 3.1.20
   tinypool:
     specifier: 0.8.2
     version: 0.8.2
@@ -992,7 +992,7 @@ packages:
       object-inspect: 1.13.1
       object-keys: 1.1.1
       object.assign: 4.1.5
-      regexp.prototype.flags: 1.5.1
+      regexp.prototype.flags: 1.5.2
       safe-array-concat: 1.1.0
       safe-regex-test: 1.0.3
       string.prototype.trim: 1.2.8
@@ -2664,8 +2664,8 @@ packages:
       load-json-file: 5.3.0
     dev: true
 
-  /poolifier@3.1.19:
-    resolution: {integrity: sha512-H/tg/7FNLdZvL0vkJLy2hkjVQWp7QYaDJ0/lJbb4m1ZDtEhOQ4sKsQLlGGI4+jjyWqFlfieqP7FmJC98r4wWyw==}
+  /poolifier@3.1.20:
+    resolution: {integrity: sha512-UmT6eHbCwb22J+8cDtcjPJaDc7CMpNaTtJ+7QArTOo6F1DMApXBJny8qGllhwYpAscJT6VoMVoQlN1EHksdQOw==}
     engines: {node: '>=18.0.0', pnpm: '>=8.6.0'}
     requiresBuild: true
     dev: false
@@ -2756,12 +2756,13 @@ packages:
       which-builtin-type: 1.1.3
     dev: true
 
-  /regexp.prototype.flags@1.5.1:
-    resolution: {integrity: sha512-sy6TXMN+hnP/wMy+ISxg3krXx7BAtWVO4UouuCN/ziM9UEne0euamVNafDfvC83bRNr95y0V5iijeDQFUNpvrg==}
+  /regexp.prototype.flags@1.5.2:
+    resolution: {integrity: sha512-NcDiDkTLuPR+++OCKB0nWafEmhg/Da8aUPLPMQbK+bxKKCm1/S5he+AqYa4PlMCVBalb4/yxIRub6qkEx5yJbw==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.6
       define-properties: 1.2.1
+      es-errors: 1.3.0
       set-function-name: 2.0.1
     dev: true
 
@@ -3069,7 +3070,7 @@ packages:
       get-intrinsic: 1.2.4
       has-symbols: 1.0.3
       internal-slot: 1.0.7
-      regexp.prototype.flags: 1.5.1
+      regexp.prototype.flags: 1.5.2
       set-function-name: 2.0.1
       side-channel: 1.0.5
     dev: true
