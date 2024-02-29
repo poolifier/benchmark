@@ -9,8 +9,8 @@ dependencies:
     specifier: 0.3.7
     version: 0.3.7
   piscina:
-    specifier: 4.3.2
-    version: 4.3.2
+    specifier: 4.4.0
+    version: 4.4.0
   poolifier:
     specifier: 3.1.21
     version: 3.1.21
@@ -2498,8 +2498,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /piscina@4.3.2:
-    resolution: {integrity: sha512-aXPak3A1LgbfDFrsmgYhQS4J7ElHRFL7iUkUqaiLNDRE69YQSFGqIZiHaXOH4NyC6EdD+awZVeE7MG0zVm9L4Q==}
+  /piscina@4.4.0:
+    resolution: {integrity: sha512-+AQduEJefrOApE4bV7KRmp3N2JnnyErlVqq4P/jmko4FPz9Z877BCccl/iB3FdrWSUkvbGV9Kan/KllJgat3Vg==}
     optionalDependencies:
       nice-napi: 1.0.2
     dev: false
