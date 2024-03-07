@@ -8,10 +8,10 @@ module.exports = defineConfig({
     node: true
   },
   parserOptions: {
-    ecmaVersion: 2022,
-    sourceType: 'module'
+    sourceType: 'module',
+    ecmaVersion: 2022
   },
-  plugins: ['promise', 'jsdoc'],
+  plugins: ['simple-import-sort', 'promise', 'jsdoc'],
   extends: [
     'standard',
     'eslint:recommended',
@@ -19,5 +19,9 @@ module.exports = defineConfig({
     'plugin:jsdoc/recommended',
     'plugin:import/recommended',
     'plugin:promise/recommended'
-  ]
+  ],
+  rules: {
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error'
+  }
 })
