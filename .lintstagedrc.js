@@ -4,6 +4,6 @@ export default {
     'standard --fix',
     'eslint --cache --fix'
   ],
-  '!(package.json)*.json': ['biome format --write'],
+  '*.json': ['biome format --write'],
   '*.{md,yml,yaml}': ['prettier --cache --write']
 }
