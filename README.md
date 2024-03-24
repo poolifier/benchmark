@@ -1,5 +1,11 @@
 # Poolifier benchmark versus other worker pools
 
+## Table of contents
+
+- [Description](#description)
+- [Usage](#usage)
+- [Results](#results)
+
 ## Description
 
 To compare poolifier pools performance vs other pools performance we chose to use [hyperfine](https://github.com/sharkdp/hyperfine).  
