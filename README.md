@@ -14,10 +14,6 @@ We chose to use this tool because it allows to run isolated Node.js processes so
   - [concurrent.js](https://github.com/bitair-org/concurrent.js)
   - [nanothreads](https://github.com/snuffyDev/nanothreads)
 
-  Those are our results:
-
-  - CPU Intensive task with 100k operations submitted to each pool: [https://bencher.dev/perf/poolifier-benchmark](https://bencher.dev/perf/poolifier-benchmark).
-
 - External pools with which we used to compare the poolifier results:
 
   - [node-worker-threads-pool](https://github.com/SUCHMOKUO/node-worker-threads-pool): removed because it does not support dynamic modules import or import outside the task function. The task function is expected to be self-contained, which makes it difficult to use in real world application without ugly hacks.
@@ -40,3 +36,5 @@ To run the benchmark versus other worker pools you will need to:
 > :warning: **Please be sure to use a quiet PC when you run the benchmark**
 
 ## [Results](https://bencher.dev/perf/poolifier-benchmark)
+
+CPU Intensive task with 100k operations submitted to each pool: [https://bencher.dev/perf/poolifier-benchmark](https://bencher.dev/perf/poolifier-benchmark).
