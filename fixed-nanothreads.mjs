@@ -20,7 +20,7 @@ const threadPool = new ThreadPool({
 /**
  *
  */
-async function run () {
+const run = async () => {
   const promises = new Set()
   for (let i = 0; i < numIterations; i++) {
     promises.add(threadPool.exec(data))

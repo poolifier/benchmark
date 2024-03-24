@@ -23,7 +23,7 @@ const dynamicThreadPool = new DynamicThreadPool(
 /**
  *
  */
-async function run () {
+const run = async () => {
   const promises = new Set()
   for (let i = 0; i < numIterations; i++) {
     promises.add(dynamicThreadPool.execute(data))

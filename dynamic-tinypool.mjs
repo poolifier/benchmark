@@ -21,7 +21,7 @@ const tinypool = new Tinypool({
 /**
  *
  */
-async function run () {
+const run = async () => {
   const promises = new Set()
   for (let i = 0; i < numIterations; i++) {
     promises.add(tinypool.run(data))

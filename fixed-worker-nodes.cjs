@@ -21,7 +21,7 @@ const workerNodes = new WorkerNodes(require.resolve('./functions/index.cjs'), {
 /**
  *
  */
-async function run () {
+const run = async () => {
   const promises = new Set()
   for (let i = 0; i < numIterations; i++) {
     promises.add(workerNodes.call.functionToBench(data))
@@ -31,6 +31,6 @@ async function run () {
   process.exit()
 }
 
-(async () => {
+;(async () => {
   await executeAsyncFn(run)
 })()

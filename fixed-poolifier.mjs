@@ -22,7 +22,7 @@ const fixedThreadPool = new FixedThreadPool(
 /**
  *
  */
-async function run () {
+const run = async () => {
   const promises = new Set()
   for (let i = 0; i < numIterations; i++) {
     promises.add(fixedThreadPool.execute(data))
