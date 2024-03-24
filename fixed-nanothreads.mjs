@@ -1,6 +1,6 @@
 import { ThreadPool } from 'nanothreads'
 
-import functionToBench from './functions/function-to-bench.cjs'
+import functionToBench from './functions/function-to-bench.mjs'
 import { BenchmarkDefaults, executeAsyncFn } from './utils.cjs'
 
 const size = parseInt(process.env.POOL_SIZE) || BenchmarkDefaults.poolSize

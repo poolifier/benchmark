@@ -38,6 +38,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@bitair/concurrent.js": "0.8.2",
     "nanothreads": "0.3.7",
     "piscina": "4.4.0",
     "poolifier": "3.1.22",

@@ -12,10 +12,10 @@ const data = {
 }
 
 const tinypool = new Tinypool({
-  filename: './workers/tinypool/function-to-bench-worker.mjs',
+  filename: './functions/function-to-bench.mjs',
   minThreads: Math.floor(size / 2),
   maxThreads: size,
-  idleTimeout: 60000 // this is the same as poolifier default
+  idleTimeout: BenchmarkDefaults.idleTimeout
 })
 
 /**

@@ -14,7 +14,8 @@ const BenchmarkDefaults = {
   poolSize: availableParallelism(),
   numIterations: 100000,
   taskType: 'CPU_INTENSIVE',
-  taskSize: 5000
+  taskSize: 5000,
+  idleTimeout: 60000
 }
 
 module.exports = {

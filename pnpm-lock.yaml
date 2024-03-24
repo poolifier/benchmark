@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@bitair/concurrent.js':
+    specifier: 0.8.2
+    version: 0.8.2
   nanothreads:
     specifier: 0.3.7
     version: 0.3.7
@@ -188,6 +191,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@bitair/concurrent.js@0.8.2:
+    resolution: {integrity: sha512-qbfCqWlvMOSH0a/aUj0B9Yx4I+y/GPn7jK1ajKNTSachSxHQhhsYdUEOJbuhznKnEPKZ7It1Ukz4qFn8PWtk/w==}
+    dev: false
 
   /@commitlint/cli@19.2.1(@types/node@20.11.30)(typescript@5.4.3):
     resolution: {integrity: sha512-cbkYUJsLqRomccNxvoJTyv5yn0bSy05BBizVyIcLACkRbVUqYorC351Diw/XFSWC/GtpwiwT2eOvQgFZa374bg==}

@@ -1,4 +1,4 @@
-import Piscina from 'piscina'
+import { concurrent } from '@bitair/concurrent.js'
 
 import { BenchmarkDefaults, executeAsyncFn } from './utils.cjs'
 
@@ -11,12 +11,15 @@ const data = {
   taskSize: parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize
 }
 
-const piscina = new Piscina({
-  filename: './functions/function-to-bench.mjs',
+concurrent.config({
   minThreads: size,
   maxThreads: size,
-  idleTimeout: BenchmarkDefaults.idleTimeout
+  threadIdleTimeout: BenchmarkDefaults.idleTimeout
 })
+
+const functionToBenchModule = concurrent.import(
+  new URL('./functions/index.mjs', import.meta.url)
+)
 
 /**
  *
@@ -24,9 +27,11 @@ const piscina = new Piscina({
 async function run () {
   const promises = new Set()
   for (let i = 0; i < numIterations; i++) {
-    promises.add(piscina.run(data))
+    const { functionToBench } = await functionToBenchModule.load()
+    promises.add(functionToBench(data))
   }
   await Promise.all(promises)
+  await concurrent.terminate()
   // eslint-disable-next-line n/no-process-exit
   process.exit()
 }

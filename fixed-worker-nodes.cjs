@@ -12,14 +12,11 @@ const data = {
   taskSize: parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize
 }
 
-const workerNodes = new WorkerNodes(
-  require.resolve('./workers/worker-nodes/function-to-bench-worker.cjs'),
-  {
-    minWorkers: size,
-    maxWorkers: size,
-    taskTimeout: 60000 // this is the same as poolifier default
-  }
-)
+const workerNodes = new WorkerNodes(require.resolve('./functions/index.cjs'), {
+  minWorkers: size,
+  maxWorkers: size,
+  taskTimeout: BenchmarkDefaults.idleTimeout
+})
 
 /**
  *
