@@ -37,8 +37,9 @@ const functionToBench = data => {
       if (data.taskSize === 0 || data.taskSize === 1) {
         factorial = 1n
       } else {
+        data.taskSize = BigInt(data.taskSize)
         factorial = 1n
-        for (let i = 1n; i <= BigInt(data.taskSize); i++) {
+        for (let i = 1n; i <= data.taskSize; i++) {
           factorial *= i
         }
       }
