@@ -36,7 +36,7 @@ do
 done
 
 taskType=${taskType:-'CPU_INTENSIVE'}
-taskSize=${taskSize:-5000}
+taskSize=${taskSize:-50000}
 poolSize=${poolSize:-$(nproc --all)}
 numIterations=${iterations:-100000}
 

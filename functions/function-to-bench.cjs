@@ -14,26 +14,35 @@ const functionToBench = data => {
     rmSync,
     writeFileSync
   } = require('node:fs')
-  const TaskTypes = {
-    CPU_INTENSIVE: 'CPU_INTENSIVE',
-    IO_INTENSIVE: 'IO_INTENSIVE'
-  }
+  const { TaskTypes, BenchmarkDefaults } = require('../utils.cjs')
   data = data || {}
-  data.taskType = data.taskType || TaskTypes.CPU_INTENSIVE
-  data.taskSize = data.taskSize || 5000
+  data.taskType = data.taskType || BenchmarkDefaults.taskType
+  data.taskSize = data.taskSize || BenchmarkDefaults.taskSize
+  if (data.taskType == null) throw new Error('Task type is required')
+  if (data.taskSize == null) throw new Error('Task size is required')
+  if (typeof data.taskType !== 'string') {
+    throw new Error('Task type must be a string')
+  }
+  if (!Number.isSafeInteger(data.taskSize)) {
+    throw new Error('Task size must be an integer')
+  }
+  if (data.taskSize < 0) throw new Error('Task size must be a positive number')
   const baseDirectory = `/tmp/poolifier-benchmarks/${randomInt(
     281474976710655
   )}`
+  let factorial
   switch (data.taskType) {
     case TaskTypes.CPU_INTENSIVE:
       // CPU intensive task
-      for (let i = 0; i < data.taskSize; i++) {
-        const o = {
-          a: i
+      if (data.taskSize === 0 || data.taskSize === 1) {
+        factorial = BigInt(data.taskSize)
+      } else {
+        factorial = 1n
+        for (let i = 1n; i <= BigInt(data.taskSize); i++) {
+          factorial *= i
         }
-        JSON.stringify(o)
       }
-      return { ok: 1 }
+      return { ok: 1, factorial }
     case TaskTypes.IO_INTENSIVE:
       // IO intensive task
       if (existsSync(baseDirectory) === true) {
