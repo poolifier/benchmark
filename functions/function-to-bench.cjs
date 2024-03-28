@@ -14,7 +14,7 @@ const functionToBench = data => {
     rmSync,
     writeFileSync
   } = require('node:fs')
-  const { TaskTypes, BenchmarkDefaults } = require('../utils.cjs')
+  const { TaskTypes, BenchmarkDefaults } = require('./utils.cjs')
   data = data || {}
   data.taskType = data.taskType || BenchmarkDefaults.taskType
   data.taskSize = data.taskSize || BenchmarkDefaults.taskSize
