@@ -35,7 +35,7 @@ const functionToBench = data => {
     case TaskTypes.CPU_INTENSIVE:
       // CPU intensive task
       if (data.taskSize === 0 || data.taskSize === 1) {
-        factorial = BigInt(data.taskSize)
+        factorial = 1n
       } else {
         factorial = 1n
         for (let i = 1n; i <= BigInt(data.taskSize); i++) {
