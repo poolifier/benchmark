@@ -38,7 +38,7 @@ done
 taskType=${taskType:-'CPU_INTENSIVE'}
 taskSize=${taskSize:-50000}
 poolSize=${poolSize:-$(nproc --all)}
-numIterations=${iterations:-100000}
+numIterations=${iterations:-5000}
 
 echo 'Running benchmarks with pool size:' ${poolSize}', number of iterations:' ${numIterations}', task type:' ${taskType} 'and task size:' ${taskSize}
 export NODE_ENV=production

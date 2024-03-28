@@ -323,3 +323,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,intellij+all,windows,linux,macos
+
+BENCH.md
+BENCH.json
