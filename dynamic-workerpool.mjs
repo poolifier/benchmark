@@ -29,6 +29,7 @@ const run = async () => {
     promises.add(workerPool.exec('functionToBench', dataArray))
   }
   await Promise.all(promises)
+  await workerPool.terminate()
   // eslint-disable-next-line n/no-process-exit
   process.exit()
 }

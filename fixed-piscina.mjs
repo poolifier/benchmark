@@ -27,6 +27,7 @@ const run = async () => {
     promises.add(piscina.run(data))
   }
   await Promise.all(promises)
+  await piscina.destroy()
   // eslint-disable-next-line n/no-process-exit
   process.exit()
 }

@@ -28,6 +28,7 @@ const run = async () => {
     promises.add(fixedThreadPool.execute(data))
   }
   await Promise.all(promises)
+  await fixedThreadPool.destroy()
   // eslint-disable-next-line n/no-process-exit
   process.exit()
 }
