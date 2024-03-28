@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-hyperfine --export-markdown BENCH.md --export-json BENCH.json --min-runs 20 --prepare 'sleep 5' --warmup 3 --show-output \
+time hyperfine --export-markdown BENCH.md --export-json BENCH.json --min-runs 20 --prepare 'sleep 5' --warmup 3 --show-output \
   'node dynamic-poolifier.mjs' \
   'node fixed-poolifier.mjs' \
   'node dynamic-piscina.mjs' \
