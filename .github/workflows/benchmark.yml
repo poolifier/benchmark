@@ -38,7 +38,7 @@ jobs:
           --else-if-branch "$GITHUB_BASE_REF" \
           --else-if-branch master \
           --hash "$GITHUB_SHA" \
-          --file BENCH-100000.json \
+          --file BENCH.json \
           --err \
           --github-actions ${{ secrets.GITHUB_TOKEN }} \
           "./bench.sh"
