@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 time \
-  hyperfine --export-markdown BENCH.md --export-json BENCH.json --min-runs 20 --prepare 'sleep 5' --warmup 3 --show-output \
+  hyperfine --export-markdown BENCH.md --export-json BENCH.json --prepare 'sleep 5' --warmup 3 --show-output \
   'node dynamic-poolifier.mjs' \
   'node fixed-poolifier.mjs' \
   'node dynamic-piscina.mjs' \
