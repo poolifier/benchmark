@@ -27,7 +27,6 @@ const run = async () => {
     promises.add(tinypool.run(data))
   }
   await Promise.all(promises)
-  await tinypool.destroy()
   // eslint-disable-next-line n/no-process-exit
   process.exit()
 }

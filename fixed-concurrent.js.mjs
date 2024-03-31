@@ -31,7 +31,6 @@ const run = async () => {
     promises.add(functionToBench(data))
   }
   await Promise.all(promises)
-  await concurrent.terminate()
   // eslint-disable-next-line n/no-process-exit
   process.exit()
 }

@@ -27,11 +27,9 @@ const run = async () => {
     promises.add(workerNodes.call.functionToBench(data))
   }
   await Promise.all(promises)
-  await workerNodes.terminate()
   // eslint-disable-next-line n/no-process-exit
   process.exit()
 }
-
 ;(async () => {
   await executeAsyncFn(run)
 })()
