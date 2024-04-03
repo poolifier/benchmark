@@ -28,9 +28,9 @@
     "node": "20.12.0",
     "pnpm": "8.15.6"
   },
+  "packageManager": "pnpm@8.x.x",
   "type": "module",
   "scripts": {
-    "preinstall": "npx --yes only-allow pnpm",
     "prepare": "node prepare.mjs",
     "format": "biome format . --write; standard . --fix",
     "lint": "eslint . --cache",
