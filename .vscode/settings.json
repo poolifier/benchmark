@@ -9,6 +9,7 @@
     "biomejs",
     "caffeinate",
     "commitlint",
+    "microjob",
     "MYBENCH",
     "nanothreads",
     "nproc",
@@ -18,6 +19,7 @@
     "poolifier",
     "preinstall",
     "Quadflieg",
+    "threadwork",
     "tinypool",
     "workerpool"
   ]
