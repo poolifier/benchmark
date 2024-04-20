@@ -24,8 +24,8 @@ importers:
         specifier: 0.8.4
         version: 0.8.4
       worker-nodes:
-        specifier: 2.6.0
-        version: 2.6.0
+        specifier: 2.7.0
+        version: 2.7.0
       workerpool:
         specifier: 9.1.1
         version: 9.1.1
@@ -1741,8 +1741,8 @@ packages:
     engines: {node: '>= 8'}
     hasBin: true
 
-  worker-nodes@2.6.0:
-    resolution: {integrity: sha512-mL4PR1fktwqYQFfzsH613MdHcfi9GeXuwvl2lWIrNvr3JMmrtBBfbbhc/qSK3oZDAQ2gTd7qZbAJktto+3ZeFw==}
+  worker-nodes@2.7.0:
+    resolution: {integrity: sha512-NpVb1BeayekeyOdL7j6JTha2nHm4RF6D79oPBKDt7DPXZsy95hDM4Sgn2WCB+N5t8SXc1ocFKQhMxMVRex8LXA==}
     engines: {node: '>=11.7.0'}
 
   workerpool@9.1.1:
@@ -3676,7 +3676,7 @@ snapshots:
     dependencies:
       isexe: 2.0.0
 
-  worker-nodes@2.6.0:
+  worker-nodes@2.7.0:
     dependencies:
       msgpack-lite: 0.1.26
 
