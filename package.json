@@ -41,7 +41,7 @@
     "@bitair/concurrent.js": "0.8.2",
     "nanothreads": "0.3.7",
     "piscina": "4.4.0",
-    "poolifier": "4.0.2",
+    "poolifier": "4.0.3",
     "tinypool": "0.8.4",
     "worker-nodes": "2.7.0",
     "workerpool": "9.1.1"
