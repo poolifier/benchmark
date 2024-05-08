@@ -17,7 +17,7 @@ const TaskTypes = {
 
 const BenchmarkDefaults = {
   poolSize: availableParallelism(),
-  numIterations: 500,
+  numIterations: 100000,
   taskType: TaskTypes.CPU_INTENSIVE,
   taskSize: 50000,
   idleTimeout: 60000
