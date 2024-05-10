@@ -44,7 +44,7 @@ importers:
         version: 8.57.0
       eslint-config-standard:
         specifier: ^17.1.0
-        version: 17.1.0(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint-plugin-n@17.5.1(eslint@8.57.0))(eslint-plugin-promise@6.1.1(eslint@8.57.0))(eslint@8.57.0)
+        version: 17.1.0(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint-plugin-n@17.6.0(eslint@8.57.0))(eslint-plugin-promise@6.1.1(eslint@8.57.0))(eslint@8.57.0)
       eslint-define-config:
         specifier: ^2.1.0
         version: 2.1.0
@@ -55,8 +55,8 @@ importers:
         specifier: ^48.2.4
         version: 48.2.4(eslint@8.57.0)
       eslint-plugin-n:
-        specifier: ^17.5.1
-        version: 17.5.1(eslint@8.57.0)
+        specifier: ^17.6.0
+        version: 17.6.0(eslint@8.57.0)
       eslint-plugin-promise:
         specifier: ^6.1.1
         version: 6.1.1(eslint@8.57.0)
@@ -692,8 +692,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-n@17.5.1:
-    resolution: {integrity: sha512-+E242KoY16xtwqqBRgSsDCrZ3K40jg3Np9fOgQyakcHaqymK3bnxYB1F1oe8Ksts8TDDViROFgraoLzbWhfHVw==}
+  eslint-plugin-n@17.6.0:
+    resolution: {integrity: sha512-Y73o88ROwbCtVCCmZjYlYcPYkOG7mIzxxVK1XFRSa2epbKWtAPsmYpAD0pqxg/ZwlcWxMDceQPKHYQi4VIHz7w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.23.0'
@@ -2467,11 +2467,11 @@ snapshots:
       eslint-plugin-n: 15.7.0(eslint@8.57.0)
       eslint-plugin-promise: 6.1.1(eslint@8.57.0)
 
-  eslint-config-standard@17.1.0(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint-plugin-n@17.5.1(eslint@8.57.0))(eslint-plugin-promise@6.1.1(eslint@8.57.0))(eslint@8.57.0):
+  eslint-config-standard@17.1.0(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint-plugin-n@17.6.0(eslint@8.57.0))(eslint-plugin-promise@6.1.1(eslint@8.57.0))(eslint@8.57.0):
     dependencies:
       eslint: 8.57.0
       eslint-plugin-import: 2.29.1(eslint@8.57.0)
-      eslint-plugin-n: 17.5.1(eslint@8.57.0)
+      eslint-plugin-n: 17.6.0(eslint@8.57.0)
       eslint-plugin-promise: 6.1.1(eslint@8.57.0)
 
   eslint-define-config@2.1.0: {}
@@ -2558,7 +2558,7 @@ snapshots:
       resolve: 1.22.8
       semver: 7.6.2
 
-  eslint-plugin-n@17.5.1(eslint@8.57.0):
+  eslint-plugin-n@17.6.0(eslint@8.57.0):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
       enhanced-resolve: 5.16.1
