@@ -43,4 +43,4 @@ To run the benchmark versus other worker pools you will need to:
 
 ## [Results](https://bencher.dev/perf/poolifier-benchmark)
 
-CPU Intensive task with 10k `factorial(50000)` operations submitted to each pool: [https://bencher.dev/perf/poolifier-benchmark](https://bencher.dev/perf/poolifier-benchmark).
+CPU Intensive task with 10k `factorial(1000)` operations submitted to each pool: [https://bencher.dev/perf/poolifier-benchmark](https://bencher.dev/perf/poolifier-benchmark).
