@@ -18,8 +18,8 @@ importers:
         specifier: 4.4.0
         version: 4.4.0
       poolifier:
-        specifier: 4.0.7
-        version: 4.0.7
+        specifier: 4.0.8
+        version: 4.0.8
       tinypool:
         specifier: 0.9.0
         version: 0.9.0
@@ -52,8 +52,8 @@ importers:
         specifier: ^2.29.1
         version: 2.29.1(eslint@8.57.0)
       eslint-plugin-jsdoc:
-        specifier: ^48.2.4
-        version: 48.2.4(eslint@8.57.0)
+        specifier: ^48.2.5
+        version: 48.2.5(eslint@8.57.0)
       eslint-plugin-n:
         specifier: ^17.7.0
         version: 17.7.0(eslint@8.57.0)
@@ -680,8 +680,8 @@ packages:
       '@typescript-eslint/parser':
         optional: true
 
-  eslint-plugin-jsdoc@48.2.4:
-    resolution: {integrity: sha512-3ebvVgCJFy06gpmuS2ynz13uh9iFSzZ1C1dDkgcSAqVVg82zlORKMk2fvjq708pAO6bwfs5YLttknFEbaoDiGw==}
+  eslint-plugin-jsdoc@48.2.5:
+    resolution: {integrity: sha512-ZeTfKV474W1N9niWfawpwsXGu+ZoMXu4417eBROX31d7ZuOk8zyG66SO77DpJ2+A9Wa2scw/jRqBPnnQo7VbcQ==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -1431,8 +1431,8 @@ packages:
     resolution: {integrity: sha512-m0OTbR/5VPNPqO1ph6Fqbj7Hv6QU7gR/tQW40ZqrL1rjgCU85W6C1bJn0BItuJqnR98PWzw7Z8hHeChD1WrgdQ==}
     engines: {node: '>=6'}
 
-  poolifier@4.0.7:
-    resolution: {integrity: sha512-hPUrIAfqHpLj7IpdmTOe5Ld7GCkaTcJPa6EED5SOOj5f81ONY17k7qrLkX3H42zHhGb8twpjGQXmbos370IVvA==}
+  poolifier@4.0.8:
+    resolution: {integrity: sha512-sKkazwnJ6X3ahcG+VNTgfRPuZz6NUI7cCQVrxa9vVm3laWSmoq4VhZ7oA9Ffsw7esJTcuz/g8971C1sqylBptA==}
     engines: {node: '>=18.0.0', pnpm: '>=9.0.0'}
 
   possible-typed-array-names@1.0.0:
@@ -2531,7 +2531,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jsdoc@48.2.4(eslint@8.57.0):
+  eslint-plugin-jsdoc@48.2.5(eslint@8.57.0):
     dependencies:
       '@es-joy/jsdoccomment': 0.43.0
       are-docs-informative: 0.0.2
@@ -3322,7 +3322,7 @@ snapshots:
       find-up: 3.0.0
       load-json-file: 5.3.0
 
-  poolifier@4.0.7: {}
+  poolifier@4.0.8: {}
 
   possible-typed-array-names@1.0.0: {}
 

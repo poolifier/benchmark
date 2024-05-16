@@ -41,7 +41,7 @@
     "@bitair/concurrent.js": "0.8.2",
     "nanothreads": "0.3.7",
     "piscina": "4.4.0",
-    "poolifier": "4.0.7",
+    "poolifier": "4.0.8",
     "tinypool": "0.9.0",
     "worker-nodes": "2.7.0",
     "workerpool": "9.1.1"
@@ -54,7 +54,7 @@
     "eslint-config-standard": "^17.1.0",
     "eslint-define-config": "^2.1.0",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsdoc": "^48.2.4",
+    "eslint-plugin-jsdoc": "^48.2.5",
     "eslint-plugin-n": "^17.7.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-simple-import-sort": "^12.1.0",
