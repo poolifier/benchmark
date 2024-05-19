@@ -1,4 +1,4 @@
-import { FixedThreadPool } from 'poolifier'
+import { FixedThreadPool, WorkerChoiceStrategies } from 'poolifier'
 
 import { BenchmarkDefaults, executeAsyncFn } from './utils.cjs'
 
@@ -15,6 +15,7 @@ const fixedThreadPool = new FixedThreadPool(
   size,
   './workers/poolifier/function-to-bench-worker.mjs',
   {
+    workerChoiceStrategy: WorkerChoiceStrategies.LEAST_USED,
     enableTasksQueue: true
   }
 )

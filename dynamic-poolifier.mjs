@@ -1,4 +1,4 @@
-import { DynamicThreadPool } from 'poolifier'
+import { DynamicThreadPool, WorkerChoiceStrategies } from 'poolifier'
 
 import { BenchmarkDefaults, executeAsyncFn } from './utils.cjs'
 
@@ -16,6 +16,7 @@ const dynamicThreadPool = new DynamicThreadPool(
   size,
   './workers/poolifier/function-to-bench-worker.mjs',
   {
+    workerChoiceStrategy: WorkerChoiceStrategies.LEAST_USED,
     enableTasksQueue: true
   }
 )
