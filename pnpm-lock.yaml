@@ -15,11 +15,11 @@ importers:
         specifier: 0.3.7
         version: 0.3.7
       piscina:
-        specifier: 4.4.0
-        version: 4.4.0
+        specifier: 4.5.0
+        version: 4.5.0
       poolifier:
-        specifier: 4.0.9
-        version: 4.0.9
+        specifier: 4.0.10
+        version: 4.0.10
       tinypool:
         specifier: 0.9.0
         version: 0.9.0
@@ -278,8 +278,8 @@ packages:
   '@types/node@20.12.12':
     resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
 
-  '@typescript-eslint/types@7.9.0':
-    resolution: {integrity: sha512-oZQD9HEWQanl9UfsbGVcZ2cGaR0YT5476xfWE0oE5kQa2sNK2frxOlkeacLOTh9po4AlUT5rtkGyYM5kew0z5w==}
+  '@typescript-eslint/types@7.10.0':
+    resolution: {integrity: sha512-7fNj+Ya35aNyhuqrA1E/VayQX9Elwr8NKZ4WueClR3KwJ7Xx9jcCdOrLW04h51de/+gNbyFMs+IDxh5xIwfbNg==}
     engines: {node: ^18.18.0 || >=20.0.0}
 
   '@ungap/structured-clone@1.2.0':
@@ -1424,15 +1424,15 @@ packages:
     resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
     engines: {node: '>=6'}
 
-  piscina@4.4.0:
-    resolution: {integrity: sha512-+AQduEJefrOApE4bV7KRmp3N2JnnyErlVqq4P/jmko4FPz9Z877BCccl/iB3FdrWSUkvbGV9Kan/KllJgat3Vg==}
+  piscina@4.5.0:
+    resolution: {integrity: sha512-iBaLWI56PFP81cfBSomWTmhOo9W2/yhIOL+Tk8O1vBCpK39cM0tGxB+wgYjG31qq4ohGvysfXSdnj8h7g4rZxA==}
 
   pkg-conf@3.1.0:
     resolution: {integrity: sha512-m0OTbR/5VPNPqO1ph6Fqbj7Hv6QU7gR/tQW40ZqrL1rjgCU85W6C1bJn0BItuJqnR98PWzw7Z8hHeChD1WrgdQ==}
     engines: {node: '>=6'}
 
-  poolifier@4.0.9:
-    resolution: {integrity: sha512-p1S1ybm/oPeuDm1z9cJZ8lzwj/e5if4zuixz5vBAr0VysY8adSeheNHdRXGjijAlmDNt/PTMaYagpeltIa+dPA==}
+  poolifier@4.0.10:
+    resolution: {integrity: sha512-PSitQC7KbzqnPrHLOLl0nebqDbGtEPN1fNVZgAdYPK7jmswAiDaW9z4VDr1fW45mkPio654bEg77QvsScUG+WQ==}
     engines: {node: '>=18.0.0', pnpm: '>=9.0.0'}
 
   possible-typed-array-names@1.0.0:
@@ -1964,7 +1964,7 @@ snapshots:
     dependencies:
       '@types/eslint': 8.56.10
       '@types/estree': 1.0.5
-      '@typescript-eslint/types': 7.9.0
+      '@typescript-eslint/types': 7.10.0
       comment-parser: 1.4.1
       esquery: 1.5.0
       jsdoc-type-pratt-parser: 4.0.0
@@ -2035,7 +2035,7 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
-  '@typescript-eslint/types@7.9.0': {}
+  '@typescript-eslint/types@7.10.0': {}
 
   '@ungap/structured-clone@1.2.0': {}
 
@@ -3313,7 +3313,7 @@ snapshots:
 
   pify@4.0.1: {}
 
-  piscina@4.4.0:
+  piscina@4.5.0:
     optionalDependencies:
       nice-napi: 1.0.2
 
@@ -3322,7 +3322,7 @@ snapshots:
       find-up: 3.0.0
       load-json-file: 5.3.0
 
-  poolifier@4.0.9: {}
+  poolifier@4.0.10: {}
 
   possible-typed-array-names@1.0.0: {}
 
