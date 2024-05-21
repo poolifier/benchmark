@@ -3,13 +3,14 @@ const WorkerNodes = require('worker-nodes')
 
 const { BenchmarkDefaults, executeAsyncFn } = require('./utils.cjs')
 
-const size = parseInt(process.env.POOL_SIZE) || BenchmarkDefaults.poolSize
+const size =
+  Number.parseInt(process.env.POOL_SIZE) || BenchmarkDefaults.poolSize
 const numIterations =
-  parseInt(process.env.NUM_ITERATIONS) || BenchmarkDefaults.numIterations
+  Number.parseInt(process.env.NUM_ITERATIONS) || BenchmarkDefaults.numIterations
 const data = {
   test: 'MYBENCH',
   taskType: process.env.TASK_TYPE || BenchmarkDefaults.taskType,
-  taskSize: parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize
+  taskSize: Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize
 }
 
 const workerNodes = new WorkerNodes(require.resolve('./functions/index.cjs'), {
@@ -30,7 +31,6 @@ const run = async () => {
   // eslint-disable-next-line n/no-process-exit
   process.exit()
 }
-
 ;(async () => {
   await executeAsyncFn(run)
 })()
