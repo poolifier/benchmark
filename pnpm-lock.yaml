@@ -15,8 +15,8 @@ importers:
         specifier: 0.3.7
         version: 0.3.7
       piscina:
-        specifier: 4.5.0
-        version: 4.5.0
+        specifier: 4.5.1
+        version: 4.5.1
       poolifier:
         specifier: 4.0.11
         version: 4.0.11
@@ -1424,8 +1424,8 @@ packages:
     resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
     engines: {node: '>=6'}
 
-  piscina@4.5.0:
-    resolution: {integrity: sha512-iBaLWI56PFP81cfBSomWTmhOo9W2/yhIOL+Tk8O1vBCpK39cM0tGxB+wgYjG31qq4ohGvysfXSdnj8h7g4rZxA==}
+  piscina@4.5.1:
+    resolution: {integrity: sha512-DVhySLPfqAW+uRH9dF0bjA2xEWr5ANLAzkYXx5adSLMFnwssSIVJYhg0FlvgYsnT/khILQJ3WkjqbAlBvt+maw==}
 
   pkg-conf@3.1.0:
     resolution: {integrity: sha512-m0OTbR/5VPNPqO1ph6Fqbj7Hv6QU7gR/tQW40ZqrL1rjgCU85W6C1bJn0BItuJqnR98PWzw7Z8hHeChD1WrgdQ==}
@@ -3314,7 +3314,7 @@ snapshots:
 
   pify@4.0.1: {}
 
-  piscina@4.5.0:
+  piscina@4.5.1:
     optionalDependencies:
       nice-napi: 1.0.2
 
