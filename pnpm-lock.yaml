@@ -18,8 +18,8 @@ importers:
         specifier: 4.5.1
         version: 4.5.1
       poolifier:
-        specifier: 4.0.11
-        version: 4.0.11
+        specifier: 4.0.12
+        version: 4.0.12
       tinypool:
         specifier: 0.9.0
         version: 0.9.0
@@ -1424,8 +1424,8 @@ packages:
     resolution: {integrity: sha512-m0OTbR/5VPNPqO1ph6Fqbj7Hv6QU7gR/tQW40ZqrL1rjgCU85W6C1bJn0BItuJqnR98PWzw7Z8hHeChD1WrgdQ==}
     engines: {node: '>=6'}
 
-  poolifier@4.0.11:
-    resolution: {integrity: sha512-TW2Nik3Q7+KgwsiqUHmzeCYRsO20TGZnxXSAhaySEMD+wAmtNFOkCAOwcKCCs0XPByJkiGvEVtkaaDGeC6vuRg==}
+  poolifier@4.0.12:
+    resolution: {integrity: sha512-35JkkUGoJ6NdirvSjXrpdb1XIm1RyFLb3UMheS2IPrab/OceE/cqXCGDeCumNwg9Mg3+ZztD9tHxIKXizUmSXA==}
     engines: {node: '>=18.0.0', pnpm: '>=9.0.0'}
 
   possible-typed-array-names@1.0.0:
@@ -3309,7 +3309,7 @@ snapshots:
       find-up: 3.0.0
       load-json-file: 5.3.0
 
-  poolifier@4.0.11: {}
+  poolifier@4.0.12: {}
 
   possible-typed-array-names@1.0.0: {}
 
