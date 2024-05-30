@@ -9,7 +9,7 @@ const numIterations =
 const dataArray = [
   'MYBENCH',
   process.env.TASK_TYPE || BenchmarkDefaults.taskType,
-  Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize
+  Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize,
 ]
 
 const workerPool = workerpool.pool(
@@ -17,7 +17,7 @@ const workerPool = workerpool.pool(
   {
     minWorkers: Math.floor(size / 2),
     maxWorkers: size,
-    workerType: 'thread'
+    workerType: 'thread',
   }
 )
 

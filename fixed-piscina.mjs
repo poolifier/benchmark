@@ -9,14 +9,14 @@ const numIterations =
 const data = {
   test: 'MYBENCH',
   taskType: process.env.TASK_TYPE || BenchmarkDefaults.taskType,
-  taskSize: Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize
+  taskSize: Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize,
 }
 
 const piscina = new Piscina({
   filename: './functions/function-to-bench.mjs',
   minThreads: size,
   maxThreads: size,
-  idleTimeout: BenchmarkDefaults.idleTimeout
+  idleTimeout: BenchmarkDefaults.idleTimeout,
 })
 
 /**

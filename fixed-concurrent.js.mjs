@@ -9,13 +9,13 @@ const numIterations =
 const data = {
   test: 'MYBENCH',
   taskType: process.env.TASK_TYPE || BenchmarkDefaults.taskType,
-  taskSize: Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize
+  taskSize: Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize,
 }
 
 concurrent.config({
   minThreads: size,
   maxThreads: size,
-  threadIdleTimeout: BenchmarkDefaults.idleTimeout
+  threadIdleTimeout: BenchmarkDefaults.idleTimeout,
 })
 
 const functionToBenchModule = concurrent.import(

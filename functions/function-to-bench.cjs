@@ -12,7 +12,7 @@ const functionToBench = data => {
     mkdirSync,
     readFileSync,
     rmSync,
-    writeFileSync
+    writeFileSync,
   } = require('node:fs')
   const { TaskTypes, BenchmarkDefaults } = require('./utils.cjs')
   data = data || {}
@@ -54,7 +54,7 @@ const functionToBench = data => {
         const filePath = `${baseDirectory}/${i}`
         writeFileSync(filePath, i.toString(), {
           encoding: 'utf8',
-          flag: 'a'
+          flag: 'a',
         })
         readFileSync(filePath, 'utf8')
       }

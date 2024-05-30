@@ -12,7 +12,7 @@ const executeAsyncFn = async fn => {
 
 const TaskTypes = {
   CPU_INTENSIVE: 'CPU_INTENSIVE',
-  IO_INTENSIVE: 'IO_INTENSIVE'
+  IO_INTENSIVE: 'IO_INTENSIVE',
 }
 
 const BenchmarkDefaults = {
@@ -20,11 +20,11 @@ const BenchmarkDefaults = {
   numIterations: 100000,
   taskType: TaskTypes.CPU_INTENSIVE,
   taskSize: 1000,
-  idleTimeout: 60000
+  idleTimeout: 60000,
 }
 
 module.exports = {
   BenchmarkDefaults,
   executeAsyncFn,
-  TaskTypes
+  TaskTypes,
 }

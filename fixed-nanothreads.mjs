@@ -10,12 +10,12 @@ const numIterations =
 const data = {
   test: 'MYBENCH',
   taskType: process.env.TASK_TYPE || BenchmarkDefaults.taskType,
-  taskSize: Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize
+  taskSize: Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize,
 }
 
 const threadPool = new ThreadPool({
   task: functionToBench,
-  count: size
+  count: size,
 })
 
 /**

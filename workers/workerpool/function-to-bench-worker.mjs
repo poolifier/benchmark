@@ -6,10 +6,10 @@ const functionToBenchWrapper = (testName, taskType, taskSize) => {
   return functionToBench({
     test: testName,
     taskType,
-    taskSize
+    taskSize,
   })
 }
 
 workerpool.worker({
-  functionToBench: functionToBenchWrapper
+  functionToBench: functionToBenchWrapper,
 })

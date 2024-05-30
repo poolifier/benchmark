@@ -4,5 +4,5 @@ import functionToBench from '../../functions/function-to-bench.mjs'
 import { BenchmarkDefaults } from '../../utils.cjs'
 
 export default new ThreadWorker(functionToBench, {
-  maxInactiveTime: BenchmarkDefaults.idleTimeout
+  maxInactiveTime: BenchmarkDefaults.idleTimeout,
 })
