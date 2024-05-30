@@ -10,7 +10,6 @@ import neostandard from 'neostandard'
 export default defineFlatConfig([
   ...neostandard({
     globals: {
-      ...globals.commonjs,
       ...globals.node,
     },
   }),
