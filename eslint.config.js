@@ -1,31 +1,4 @@
 /* eslint-disable n/no-unpublished-import */
-// const { defineConfig } = require('eslint-define-config')
-
-// module.exports = defineConfig({
-//   root: true,
-//   env: {
-//     es2022: true,
-//     node: true
-//   },
-//   parserOptions: {
-//     sourceType: 'module',
-//     ecmaVersion: 2022
-//   },
-//   plugins: ['simple-import-sort', 'promise', 'jsdoc'],
-//   extends: [
-//     'standard',
-//     'eslint:recommended',
-//     'plugin:n/recommended',
-//     'plugin:jsdoc/recommended',
-//     'plugin:import/recommended',
-//     'plugin:promise/recommended'
-//   ],
-//   rules: {
-//     'simple-import-sort/imports': 'error',
-//     'simple-import-sort/exports': 'error'
-//   }
-// })
-
 import js from '@eslint/js'
 import { defineFlatConfig } from 'eslint-define-config'
 import jsdoc from 'eslint-plugin-jsdoc'
