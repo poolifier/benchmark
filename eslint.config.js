@@ -8,14 +8,8 @@ import globals from 'globals'
 import neostandard from 'neostandard'
 
 export default defineFlatConfig([
-  ...neostandard({
-    globals: {
-      ...globals.node,
-    },
-  }),
   js.configs.recommended,
   ...nodePlugin.configs['flat/mixed-esm-and-cjs'],
-  jsdoc.configs['flat/recommended'],
   {
     plugins: {
       'simple-import-sort': simpleImportSort,
@@ -25,4 +19,10 @@ export default defineFlatConfig([
       'simple-import-sort/exports': 'error',
     },
   },
+  jsdoc.configs['flat/recommended'],
+  ...neostandard({
+    globals: {
+      ...globals.node,
+    },
+  }),
 ])
