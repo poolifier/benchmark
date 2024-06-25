@@ -12,8 +12,8 @@ importers:
         specifier: 0.8.2
         version: 0.8.2
       nanothreads:
-        specifier: 0.3.8
-        version: 0.3.8
+        specifier: 0.3.9
+        version: 0.3.9
       piscina:
         specifier: 4.6.0
         version: 4.6.0
@@ -966,8 +966,8 @@ packages:
     resolution: {integrity: sha512-SZ2IxeqZ1oRFGo0xFGbvBJWMp3yLIY9rlIJyxy8CGrwZn1f0ZK4r6jV/AM1r0FZMDUkWkglOk/eeKIL9g77Nxw==}
     hasBin: true
 
-  nanothreads@0.3.8:
-    resolution: {integrity: sha512-KU+2UDMH51J/wXEEimAFB7t64of9YybNydNt6ZL3dvb0x2Y1vkdWimUOc3zUp9mjZsvYidbK55w6+1D4yyKQdQ==}
+  nanothreads@0.3.9:
+    resolution: {integrity: sha512-w788C1Uh1WQI120pjtFnUo88ZzHDwYo7zl9SxTi/ujT2avBN0e5CklUW0b+YnEKJFJB9EC60DNFMn9xB2F1EVQ==}
 
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
@@ -2252,7 +2252,7 @@ snapshots:
       int64-buffer: 0.1.10
       isarray: 1.0.0
 
-  nanothreads@0.3.8: {}
+  nanothreads@0.3.9: {}
 
   natural-compare@1.4.0: {}
 
