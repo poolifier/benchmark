@@ -2,20 +2,15 @@
 import js from '@eslint/js'
 import { defineFlatConfig } from 'eslint-define-config'
 import jsdoc from 'eslint-plugin-jsdoc'
-import nodePlugin from 'eslint-plugin-n'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
-import globals from 'globals'
-import neostandard from 'neostandard'
+import neostandard, { plugins } from 'neostandard'
 
 export default defineFlatConfig([
   js.configs.recommended,
-  ...nodePlugin.configs['flat/mixed-esm-and-cjs'],
+  plugins.promise.configs['flat/recommended'],
+  ...plugins.n.configs['flat/mixed-esm-and-cjs'],
   jsdoc.configs['flat/recommended'],
-  ...neostandard({
-    globals: {
-      ...globals.node,
-    },
-  }),
+  ...neostandard(),
   {
     plugins: {
       'simple-import-sort': simpleImportSort,
