@@ -54,7 +54,7 @@
     "eslint": "^9.6.0",
     "eslint-define-config": "^2.1.0",
     "eslint-plugin-jsdoc": "^48.5.0",
-    "eslint-plugin-simple-import-sort": "^12.1.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "neostandard": "^0.11.0",
