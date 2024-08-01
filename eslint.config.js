@@ -10,7 +10,6 @@ export default defineFlatConfig([
   plugins.promise.configs['flat/recommended'],
   ...plugins.n.configs['flat/mixed-esm-and-cjs'],
   jsdoc.configs['flat/recommended'],
-  ...neostandard(),
   {
     plugins: {
       'simple-import-sort': simpleImportSort,
@@ -20,4 +19,5 @@ export default defineFlatConfig([
       'simple-import-sort/exports': 'error',
     },
   },
+  ...neostandard(),
 ])
