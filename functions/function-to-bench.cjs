@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * The task function to execute during pools benchmarks.
  * NOTE: This function requires to be self-contained and thread-safe (some libraries requirement).
