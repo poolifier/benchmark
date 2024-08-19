@@ -21,8 +21,8 @@ importers:
         specifier: 4.2.2
         version: 4.2.2
       tinypool:
-        specifier: 1.0.0
-        version: 1.0.0
+        specifier: 1.0.1
+        version: 1.0.1
       worker-nodes:
         specifier: 2.7.0
         version: 2.7.0
@@ -1609,8 +1609,8 @@ packages:
   through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
 
-  tinypool@1.0.0:
-    resolution: {integrity: sha512-KIKExllK7jp3uvrNtvRBYBWBOAXSX8ZvoaD8T+7KB/QHIuoJW3Pmr60zucywjAlMb5TeXUkcs/MWeWLu0qvuAQ==}
+  tinypool@1.0.1:
+    resolution: {integrity: sha512-URZYihUbRPcGv95En+sz6MfghfIc2OJ1sv/RmhWZLouPY0/8Vo80viwPvg3dlaS9fuq7fQMEfgRRK7BBZThBEA==}
     engines: {node: ^18.0.0 || >=20.0.0}
 
   to-regex-range@5.0.1:
@@ -3464,7 +3464,7 @@ snapshots:
 
   through@2.3.8: {}
 
-  tinypool@1.0.0: {}
+  tinypool@1.0.1: {}
 
   to-regex-range@5.0.1:
     dependencies:
