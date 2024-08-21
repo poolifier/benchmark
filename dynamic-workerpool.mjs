@@ -15,8 +15,8 @@ const dataArray = [
 const workerPool = workerpool.pool(
   './workers/workerpool/function-to-bench-worker.mjs',
   {
-    minWorkers: Math.floor(size / 2),
     maxWorkers: size,
+    minWorkers: Math.floor(size / 2),
     workerType: 'thread',
   }
 )

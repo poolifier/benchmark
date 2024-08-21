@@ -7,17 +7,17 @@ const size =
 const numIterations =
   Number.parseInt(process.env.NUM_ITERATIONS) || BenchmarkDefaults.numIterations
 const data = {
-  test: 'MYBENCH',
-  taskType: process.env.TASK_TYPE || BenchmarkDefaults.taskType,
   taskSize:
     Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize,
+  taskType: process.env.TASK_TYPE || BenchmarkDefaults.taskType,
+  test: 'MYBENCH',
 }
 
 const piscina = new Piscina({
   filename: './functions/function-to-bench.mjs',
-  minThreads: Math.floor(size / 2),
-  maxThreads: size,
   idleTimeout: BenchmarkDefaults.idleTimeout,
+  maxThreads: size,
+  minThreads: Math.floor(size / 2),
 })
 
 /**
