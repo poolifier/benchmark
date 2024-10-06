@@ -33,10 +33,12 @@ jobs:
       - name: Run benchmark
         run: |
           bencher run \
-          --if-branch "$GITHUB_REF_NAME" \
-          --else-if-branch "$GITHUB_BASE_REF" \
-          --else-if-branch master \
-          --hash "$GITHUB_SHA" \
+          --branch main \
+          --threshold-measure latency \
+          --threshold-test t_test \
+          --threshold-max-sample-size 64 \
+          --threshold-upper-boundary 0.99 \
+          --thresholds-reset \
           --file BENCH.json \
           --err \
           --github-actions ${{ secrets.GITHUB_TOKEN }} \
