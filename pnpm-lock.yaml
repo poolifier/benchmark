@@ -18,8 +18,8 @@ importers:
         specifier: 4.7.0
         version: 4.7.0
       poolifier:
-        specifier: 4.4.2
-        version: 4.4.2
+        specifier: 4.4.4
+        version: 4.4.4
       tinypool:
         specifier: 1.0.1
         version: 1.0.1
@@ -1440,8 +1440,8 @@ packages:
   piscina@4.7.0:
     resolution: {integrity: sha512-b8hvkpp9zS0zsfa939b/jXbe64Z2gZv0Ha7FYPNUiDIB1y2AtxcOZdfP8xN8HFjUaqQiT9gRlfjAsoL8vdJ1Iw==}
 
-  poolifier@4.4.2:
-    resolution: {integrity: sha512-SpYuWhfsO9sZmnBU3cz9tcTkj7XClHeAPu6KgRLbEwpnlupdDrZhKHhIwbLDtgn+3UbjlFAyQ8AorsLGzhAqsA==}
+  poolifier@4.4.4:
+    resolution: {integrity: sha512-XctEL5IggHDjVS7K1KdGvbt+vTzDRAFSP7e2WGlRpugZsGN6UN1O8Iq3kwYVzrG2iLqOrhQtl1dDug5OGMQKlw==}
     engines: {node: '>=18.0.0', pnpm: '>=9.0.0'}
 
   possible-typed-array-names@1.0.0:
@@ -3277,7 +3277,7 @@ snapshots:
     optionalDependencies:
       '@napi-rs/nice': 1.0.1
 
-  poolifier@4.4.2: {}
+  poolifier@4.4.4: {}
 
   possible-typed-array-names@1.0.0: {}
 
