@@ -11,5 +11,5 @@ export default defineFlatConfig([
   ...plugins.n.configs['flat/mixed-esm-and-cjs'],
   jsdoc.configs['flat/recommended'],
   perfectionist.configs['recommended-natural'],
-  ...neostandard(),
+  ...neostandard({ noJsx: true }),
 ])
