@@ -52,8 +52,8 @@ importers:
         specifier: ^50.5.0
         version: 50.5.0(eslint@9.15.0(jiti@1.21.6))
       eslint-plugin-perfectionist:
-        specifier: ^4.0.1
-        version: 4.0.1(eslint@9.15.0(jiti@1.21.6))(typescript@5.5.4)
+        specifier: ^4.0.3
+        version: 4.0.3(eslint@9.15.0(jiti@1.21.6))(typescript@5.5.4)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -775,8 +775,8 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-perfectionist@4.0.1:
-    resolution: {integrity: sha512-D7AmBw98rdfqf9wR3JTF1eLZpKmmG4jXRUSPzl2s5vVzUVSLz8pJx0RhWN6x/aHVjcJkeFBe/P4SCQWM+PdKkA==}
+  eslint-plugin-perfectionist@4.0.3:
+    resolution: {integrity: sha512-CyafnreF6boy4lf1XaF72U8NbkwrfjU/mOf1y6doaDMS9zGXhUU1DSk+ZPf/rVwCf1PL1m+rhHqFs+IcB8kDmA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       eslint: '>=8.0.0'
@@ -2596,7 +2596,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.6.3
 
-  eslint-plugin-perfectionist@4.0.1(eslint@9.15.0(jiti@1.21.6))(typescript@5.5.4):
+  eslint-plugin-perfectionist@4.0.3(eslint@9.15.0(jiti@1.21.6))(typescript@5.5.4):
     dependencies:
       '@typescript-eslint/types': 8.15.0
       '@typescript-eslint/utils': 8.15.0(eslint@9.15.0(jiti@1.21.6))(typescript@5.5.4)
