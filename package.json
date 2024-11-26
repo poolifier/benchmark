@@ -54,10 +54,10 @@
     "eslint": "^9.15.0",
     "eslint-define-config": "^2.1.0",
     "eslint-plugin-jsdoc": "^50.5.0",
-    "eslint-plugin-perfectionist": "^4.0.3",
+    "eslint-plugin-perfectionist": "^4.1.2",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
-    "neostandard": "^0.11.8",
-    "prettier": "^3.3.3"
+    "neostandard": "^0.11.9",
+    "prettier": "^3.4.0"
   }
 }
