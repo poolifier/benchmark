@@ -17,6 +17,12 @@ updates:
         update-types:
           - 'patch'
           - 'minor'
+      eslint:
+        update-types:
+          - 'major'
+        patterns:
+          - 'eslint'
+          - '@eslint/*'
       commitlint:
         patterns:
           - '@commitlint/*'
