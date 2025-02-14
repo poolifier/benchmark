@@ -52,8 +52,8 @@ importers:
         specifier: ^50.6.3
         version: 50.6.3(eslint@9.20.1(jiti@2.4.2))
       eslint-plugin-perfectionist:
-        specifier: ^4.8.0
-        version: 4.8.0(eslint@9.20.1(jiti@2.4.2))(typescript@5.5.4)
+        specifier: ^4.9.0
+        version: 4.9.0(eslint@9.20.1(jiti@2.4.2))(typescript@5.5.4)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -64,8 +64,8 @@ importers:
         specifier: ^0.12.1
         version: 0.12.1(eslint@9.20.1(jiti@2.4.2))(typescript@5.5.4)
       prettier:
-        specifier: ^3.5.0
-        version: 3.5.0
+        specifier: ^3.5.1
+        version: 3.5.1
 
 packages:
 
@@ -822,8 +822,8 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-perfectionist@4.8.0:
-    resolution: {integrity: sha512-ZF04IAPGItYMlj9xjgvvl/QpksZf79g0dkxbNcuxDjbcUSZ4CwucJ7h5Yzt5JuHe+i6igQbUYEp40j4ndfbvWQ==}
+  eslint-plugin-perfectionist@4.9.0:
+    resolution: {integrity: sha512-76lDfJnonOcXGW3bEXuqhEGId0LrOlvIE1yLHvK/eKMMPOc0b43KchAIR2Bdbqlg+LPXU5/Q+UzuzkO+cWHT6w==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       eslint: '>=8.0.0'
@@ -1513,8 +1513,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.5.0:
-    resolution: {integrity: sha512-quyMrVt6svPS7CjQ9gKb3GLEX/rl3BCL2oa/QkNcXv4YNVBC9olt3s+H7ukto06q7B1Qz46PbrKLO34PR6vXcA==}
+  prettier@3.5.1:
+    resolution: {integrity: sha512-hPpFQvHwL3Qv5AdRvBFMhnKo4tYxp0ReXiPn2bxkiohEX6mBeBwEpBSQTkD458RaaDKQMYSp4hX4UtfUTA5wDw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2767,7 +2767,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.7.1
 
-  eslint-plugin-perfectionist@4.8.0(eslint@9.20.1(jiti@2.4.2))(typescript@5.5.4):
+  eslint-plugin-perfectionist@4.9.0(eslint@9.20.1(jiti@2.4.2))(typescript@5.5.4):
     dependencies:
       '@typescript-eslint/types': 8.24.0
       '@typescript-eslint/utils': 8.24.0(eslint@9.20.1(jiti@2.4.2))(typescript@5.5.4)
@@ -3498,7 +3498,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.5.0: {}
+  prettier@3.5.1: {}
 
   prop-types@15.8.1:
     dependencies:
