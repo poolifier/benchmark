@@ -40,7 +40,7 @@
   "dependencies": {
     "@bitair/concurrent.js": "0.8.2",
     "nanothreads": "0.3.9",
-    "piscina": "4.9.1",
+    "piscina": "4.9.2",
     "poolifier": "4.4.5",
     "tinypool": "1.0.2",
     "worker-nodes": "2.7.0",
