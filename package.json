@@ -55,7 +55,7 @@
     "eslint-plugin-jsdoc": "^50.6.9",
     "eslint-plugin-perfectionist": "^4.11.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
+    "lint-staged": "^15.5.1",
     "neostandard": "^0.12.1",
     "prettier": "^3.5.3"
   }
