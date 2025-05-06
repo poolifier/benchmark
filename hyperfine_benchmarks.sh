@@ -14,4 +14,4 @@ time \
   'node fixed-worker-nodes.cjs' \
   'node dynamic-concurrent.js.mjs' \
   'node fixed-concurrent.js.mjs' \
-  'node fixed-nanothreads.mjs'
+  # 'node fixed-nanothreads.mjs'

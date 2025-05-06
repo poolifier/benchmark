@@ -12,6 +12,20 @@ updates:
     directory: '/'
     schedule:
       interval: 'daily'
+    groups:
+      regular:
+        update-types:
+          - 'patch'
+          - 'minor'
+      eslint:
+        update-types:
+          - 'major'
+        patterns:
+          - 'eslint'
+          - '@eslint/*'
+      commitlint:
+        patterns:
+          - '@commitlint/*'
     labels:
       - 'dependencies'
     reviewers:

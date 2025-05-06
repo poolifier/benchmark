@@ -1,4 +1,5 @@
 'use strict'
+
 /**
  * The task function to execute during pools benchmarks.
  * NOTE: This function requires to be self-contained and thread-safe (some libraries requirement).
@@ -14,7 +15,8 @@ const functionToBench = data => {
     rmSync,
     writeFileSync,
   } = require('node:fs')
-  const { TaskTypes, BenchmarkDefaults } = require('./utils.cjs')
+
+  const { BenchmarkDefaults, TaskTypes } = require('./utils.cjs')
   data = data || {}
   data.taskType = data.taskType || BenchmarkDefaults.taskType
   data.taskSize = data.taskSize || BenchmarkDefaults.taskSize
@@ -43,7 +45,7 @@ const functionToBench = data => {
           factorial *= i
         }
       }
-      return { ok: 1, factorial }
+      return { factorial, ok: 1 }
     case TaskTypes.IO_INTENSIVE:
       // IO intensive task
       if (existsSync(baseDirectory) === true) {

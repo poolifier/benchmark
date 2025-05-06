@@ -8,15 +8,15 @@ const size =
 const numIterations =
   Number.parseInt(process.env.NUM_ITERATIONS) || BenchmarkDefaults.numIterations
 const data = {
-  test: 'MYBENCH',
-  taskType: process.env.TASK_TYPE || BenchmarkDefaults.taskType,
   taskSize:
     Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize,
+  taskType: process.env.TASK_TYPE || BenchmarkDefaults.taskType,
+  test: 'MYBENCH',
 }
 
 const workerNodes = new WorkerNodes(require.resolve('./functions/index.cjs'), {
-  minWorkers: size,
   maxWorkers: size,
+  minWorkers: size,
   taskTimeout: BenchmarkDefaults.idleTimeout,
 })
 

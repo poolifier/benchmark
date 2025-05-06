@@ -4,9 +4,9 @@ import functionToBench from '../../functions/function-to-bench.mjs'
 
 const functionToBenchWrapper = (testName, taskType, taskSize) => {
   return functionToBench({
-    test: testName,
-    taskType,
     taskSize,
+    taskType,
+    test: testName,
   })
 }
 

@@ -7,18 +7,18 @@ const size =
 const numIterations =
   Number.parseInt(process.env.NUM_ITERATIONS) || BenchmarkDefaults.numIterations
 const data = {
-  test: 'MYBENCH',
-  taskType: process.env.TASK_TYPE || BenchmarkDefaults.taskType,
   taskSize:
     Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize,
+  taskType: process.env.TASK_TYPE || BenchmarkDefaults.taskType,
+  test: 'MYBENCH',
 }
 
 const fixedThreadPool = new FixedThreadPool(
   size,
   './workers/poolifier/function-to-bench-worker.mjs',
   {
-    workerChoiceStrategy: WorkerChoiceStrategies.LEAST_USED,
     enableTasksQueue: true,
+    workerChoiceStrategy: WorkerChoiceStrategies.LEAST_USED,
   }
 )
 
