@@ -25,7 +25,7 @@
     "pnpm": ">=9.0.0"
   },
   "volta": {
-    "node": "22.15.0",
+    "node": "22.16.0",
     "pnpm": "10.11.0"
   },
   "packageManager": "pnpm@10.11.0",
@@ -50,9 +50,9 @@
     "@biomejs/biome": "^1.9.4",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@eslint/js": "^9.26.0",
-    "eslint": "^9.26.0",
-    "eslint-plugin-jsdoc": "^50.6.16",
+    "@eslint/js": "^9.27.0",
+    "eslint": "^9.27.0",
+    "eslint-plugin-jsdoc": "^50.6.17",
     "eslint-plugin-perfectionist": "^4.13.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.0.0",
