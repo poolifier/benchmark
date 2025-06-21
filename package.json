@@ -40,9 +40,9 @@
   "dependencies": {
     "@bitair/concurrent.js": "0.8.2",
     "nanothreads": "0.3.9",
-    "piscina": "5.0.0",
+    "piscina": "5.1.1",
     "poolifier": "4.4.5",
-    "tinypool": "1.1.0",
+    "tinypool": "1.1.1",
     "worker-nodes": "2.7.0",
     "workerpool": "9.3.2"
   },
@@ -50,12 +50,12 @@
     "@biomejs/biome": "^1.9.4",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@eslint/js": "^9.28.0",
-    "eslint": "^9.28.0",
-    "eslint-plugin-jsdoc": "^50.7.1",
-    "eslint-plugin-perfectionist": "^4.14.0",
+    "@eslint/js": "^9.29.0",
+    "eslint": "^9.29.0",
+    "eslint-plugin-jsdoc": "^50.8.0",
+    "eslint-plugin-perfectionist": "^4.15.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.0",
+    "lint-staged": "^16.1.2",
     "neostandard": "^0.12.1",
     "prettier": "^3.5.3"
   }
