@@ -18,8 +18,8 @@ importers:
         specifier: 5.1.3
         version: 5.1.3
       poolifier:
-        specifier: 5.1.1
-        version: 5.1.1
+        specifier: 5.1.2
+        version: 5.1.2
       tinypool:
         specifier: 1.1.1
         version: 1.1.1
@@ -46,8 +46,8 @@ importers:
         specifier: ^9.33.0
         version: 9.33.0(jiti@2.5.1)
       eslint-plugin-jsdoc:
-        specifier: ^54.1.0
-        version: 54.1.0(eslint@9.33.0(jiti@2.5.1))
+        specifier: ^54.1.1
+        version: 54.1.1(eslint@9.33.0(jiti@2.5.1))
       eslint-plugin-perfectionist:
         specifier: ^4.15.0
         version: 4.15.0(eslint@9.33.0(jiti@2.5.1))(typescript@5.5.4)
@@ -941,8 +941,8 @@ packages:
       eslint-import-resolver-node:
         optional: true
 
-  eslint-plugin-jsdoc@54.1.0:
-    resolution: {integrity: sha512-tZJuW6s3gtveVsg08IbJgmfgAA1SpSkEz7KjxPEVmyAO4fPlz7zsMHdxjyn+Zku1l+wejr2JUdTFTNirRgHOrQ==}
+  eslint-plugin-jsdoc@54.1.1:
+    resolution: {integrity: sha512-qoY2Gl0OkvATXIxRaG2irS2ue78+RTaOyYrADvg1ue+9FHE+2Mp7RcpO0epkuhhQgOkH/REv1oJFe58dYv8SGg==}
     engines: {node: '>=20.11.0'}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -1633,8 +1633,8 @@ packages:
     resolution: {integrity: sha512-0u3N7H4+hbr40KjuVn2uNhOcthu/9usKhnw5vT3J7ply79v3D3M8naI00el9Klcy16x557VsEkkUQaHCWFXC/g==}
     engines: {node: '>=20.x'}
 
-  poolifier@5.1.1:
-    resolution: {integrity: sha512-PCJBMYIEE8MIP3HbmPqd/1GZJrSerIPDy2CAxHE3frcxVqMHd9mysnmKP3Rr7BWJJAeTgyZVIOIaqLT8dKlvkw==}
+  poolifier@5.1.2:
+    resolution: {integrity: sha512-mGdHb4HBBMaDM/zVsnHlSBwp8Pru936/g6848DdU1dNXBm5oa6OD66BHAQJ1jYo9/fuHiYzS5UupKXa+EIeRtw==}
     engines: {node: '>=20.11.0', pnpm: '>=9.0.0'}
 
   possible-typed-array-names@1.1.0:
@@ -2991,7 +2991,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-jsdoc@54.1.0(eslint@9.33.0(jiti@2.5.1)):
+  eslint-plugin-jsdoc@54.1.1(eslint@9.33.0(jiti@2.5.1)):
     dependencies:
       '@es-joy/jsdoccomment': 0.53.0
       are-docs-informative: 0.0.2
@@ -3738,7 +3738,7 @@ snapshots:
     optionalDependencies:
       '@napi-rs/nice': 1.1.1
 
-  poolifier@5.1.1: {}
+  poolifier@5.1.2: {}
 
   possible-typed-array-names@1.1.0: {}
 
