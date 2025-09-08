@@ -47,12 +47,12 @@
     "workerpool": "9.3.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.2.2",
+    "@biomejs/biome": "^2.2.3",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@eslint/js": "^9.34.0",
-    "eslint": "^9.34.0",
-    "eslint-plugin-jsdoc": "^54.3.1",
+    "@eslint/js": "^9.35.0",
+    "eslint": "^9.35.0",
+    "eslint-plugin-jsdoc": "^54.5.0",
     "eslint-plugin-perfectionist": "^4.15.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.6",
