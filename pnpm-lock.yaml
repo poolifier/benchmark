@@ -46,8 +46,8 @@ importers:
         specifier: ^9.35.0
         version: 9.35.0(jiti@2.5.1)
       eslint-plugin-jsdoc:
-        specifier: ^57.0.7
-        version: 57.0.7(eslint@9.35.0(jiti@2.5.1))
+        specifier: ^60.1.0
+        version: 60.1.0(eslint@9.35.0(jiti@2.5.1))
       eslint-plugin-perfectionist:
         specifier: ^4.15.0
         version: 4.15.0(eslint@9.35.0(jiti@2.5.1))(typescript@5.5.4)
@@ -463,6 +463,10 @@ packages:
 
   '@typescript-eslint/types@8.43.0':
     resolution: {integrity: sha512-vQ2FZaxJpydjSZJKiSW/LJsabFFvV7KgLC5DiLhkBcykhQj8iK9BOaDmQt74nnKdLvceM5xmhaTF+pLekrxEkw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@typescript-eslint/types@8.44.0':
+    resolution: {integrity: sha512-ZSl2efn44VsYM0MfDQe68RKzBz75NPgLQXuGypmym6QVOWL5kegTZuZ02xRAT9T+onqvM6T8CdQk0OwYMB6ZvA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@typescript-eslint/typescript-estree@8.43.0':
@@ -937,8 +941,8 @@ packages:
       eslint-import-resolver-node:
         optional: true
 
-  eslint-plugin-jsdoc@57.0.7:
-    resolution: {integrity: sha512-8KMn+Tlukr9XWYjTRA+aaFGbox4cV7IUO/8dYcyp5m4OPPOZmnCTNwtWeyRVnbbnuG4sPtMB6L7ct0KlemmNbQ==}
+  eslint-plugin-jsdoc@60.1.0:
+    resolution: {integrity: sha512-PHxY3rvQFo5Q04k9+UwbXOMw9N7XfnGtrh4bHK8TIxgVB7GD0Xo9lHK3RkQCi8xY9Ty5O2FBMz/4xww0KthubQ==}
     engines: {node: '>=20.11.0'}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -2190,7 +2194,7 @@ snapshots:
   '@es-joy/jsdoccomment@0.58.0':
     dependencies:
       '@types/estree': 1.0.8
-      '@typescript-eslint/types': 8.43.0
+      '@typescript-eslint/types': 8.44.0
       comment-parser: 1.4.1
       esquery: 1.6.0
       jsdoc-type-pratt-parser: 5.4.0
@@ -2412,7 +2416,7 @@ snapshots:
   '@typescript-eslint/project-service@8.43.0(typescript@5.5.4)':
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.43.0(typescript@5.5.4)
-      '@typescript-eslint/types': 8.43.0
+      '@typescript-eslint/types': 8.44.0
       debug: 4.4.3
       typescript: 5.5.4
     transitivePeerDependencies:
@@ -2440,6 +2444,8 @@ snapshots:
       - supports-color
 
   '@typescript-eslint/types@8.43.0': {}
+
+  '@typescript-eslint/types@8.44.0': {}
 
   '@typescript-eslint/typescript-estree@8.43.0(typescript@5.5.4)':
     dependencies:
@@ -2992,7 +2998,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-jsdoc@57.0.7(eslint@9.35.0(jiti@2.5.1)):
+  eslint-plugin-jsdoc@60.1.0(eslint@9.35.0(jiti@2.5.1)):
     dependencies:
       '@es-joy/jsdoccomment': 0.58.0
       are-docs-informative: 0.0.2
