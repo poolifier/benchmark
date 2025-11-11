@@ -3,8 +3,8 @@
 /**
  * The task function to execute during pools benchmarks.
  * NOTE: This function requires to be self-contained and thread-safe (some libraries requirement).
- * @param {*} data The worker data.
- * @returns {*} The result.
+ * @param {{ taskType?: string, taskSize?: number }} data The worker data.
+ * @returns {{ factorial?: bigint, ok: number }} The result.
  */
 const functionToBench = data => {
   const { randomInt } = require('node:crypto')
