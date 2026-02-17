@@ -41,13 +41,13 @@
     "@bitair/concurrent.js": "0.8.2",
     "nanothreads": "0.4.0",
     "piscina": "5.1.4",
-    "poolifier": "5.1.7",
+    "poolifier": "5.2.0",
     "tinypool": "2.1.0",
     "worker-nodes": "2.7.0",
     "workerpool": "10.0.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.1",
+    "@biomejs/biome": "^2.4.2",
     "@commitlint/cli": "^20.4.1",
     "@commitlint/config-conventional": "^20.4.1",
     "@eslint/js": "^9.39.2",
