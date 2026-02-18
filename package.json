@@ -30,6 +30,11 @@
   },
   "packageManager": "pnpm@10.29.3",
   "type": "module",
+  "pnpm": {
+    "overrides": {
+      "ajv@<8.18.0": ">=8.18.0"
+    }
+  },
   "scripts": {
     "prepare": "node prepare.mjs",
     "format": "biome format . --write; eslint . --cache --fix",
