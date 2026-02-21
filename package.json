@@ -26,9 +26,9 @@
   },
   "volta": {
     "node": "24.13.1",
-    "pnpm": "10.30.0"
+    "pnpm": "10.30.1"
   },
-  "packageManager": "pnpm@10.30.0",
+  "packageManager": "pnpm@10.30.1",
   "type": "module",
   "pnpm": {
     "overrides": {
@@ -46,18 +46,18 @@
     "@bitair/concurrent.js": "0.8.2",
     "nanothreads": "0.4.0",
     "piscina": "5.1.4",
-    "poolifier": "5.2.0",
+    "poolifier": "5.3.1",
     "tinypool": "2.1.0",
     "worker-nodes": "2.7.0",
     "workerpool": "10.0.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.2",
-    "@commitlint/cli": "^20.4.1",
-    "@commitlint/config-conventional": "^20.4.1",
-    "@eslint/js": "^9.39.2",
-    "eslint": "^9.39.2",
-    "eslint-plugin-jsdoc": "^62.6.0",
+    "@biomejs/biome": "^2.4.4",
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
+    "@eslint/js": "^9.39.3",
+    "eslint": "^9.39.3",
+    "eslint-plugin-jsdoc": "^62.7.0",
     "eslint-plugin-perfectionist": "^5.6.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
