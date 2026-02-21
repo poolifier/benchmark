@@ -324,5 +324,8 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,intellij+all,windows,linux,macos
 
+# oh-my-opencode
+.sisyphus/
+
 BENCH.md
 BENCH.json
