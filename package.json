@@ -26,9 +26,9 @@
   },
   "volta": {
     "node": "24.14.0",
-    "pnpm": "10.30.2"
+    "pnpm": "10.30.3"
   },
-  "packageManager": "pnpm@10.30.2",
+  "packageManager": "pnpm@10.30.3",
   "type": "module",
   "pnpm": {
     "overrides": {
@@ -60,7 +60,7 @@
     "eslint-plugin-jsdoc": "^62.7.1",
     "eslint-plugin-perfectionist": "^5.6.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
+    "lint-staged": "^16.3.0",
     "neostandard": "^0.12.2",
     "prettier": "^3.8.1"
   }
