@@ -60,8 +60,8 @@
     "eslint-plugin-jsdoc": "^62.7.1",
     "eslint-plugin-perfectionist": "^5.6.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.3.0",
-    "neostandard": "^0.12.2",
+    "lint-staged": "^16.3.1",
+    "neostandard": "^0.13.0",
     "prettier": "^3.8.1"
   }
 }
