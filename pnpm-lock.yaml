@@ -124,8 +124,8 @@ importers:
         specifier: 2.7.0
         version: 2.7.0
       workerpool:
-        specifier: 10.0.1
-        version: 10.0.1
+        specifier: 10.0.2
+        version: 10.0.2
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.4.12
@@ -1821,8 +1821,8 @@ packages:
     resolution: {integrity: sha512-NpVb1BeayekeyOdL7j6JTha2nHm4RF6D79oPBKDt7DPXZsy95hDM4Sgn2WCB+N5t8SXc1ocFKQhMxMVRex8LXA==}
     engines: {node: '>=11.7.0'}
 
-  workerpool@10.0.1:
-    resolution: {integrity: sha512-NAnKwZJxWlj/U1cp6ZkEtPE+GQY1S6KtOS3AlCiPfPFLxV3m64giSp7g2LsNJxzYCocDT7TSl+7T0sgrDp3KoQ==}
+  workerpool@10.0.2:
+    resolution: {integrity: sha512-8PCeZlCwu0+8hXruze1ahYNsY+M0LOCmbmySZ9BWWqWIXP9TAXa6FZCxACTDL/0j47pFcC4xW98Gr8nAC5oymg==}
 
   wrap-ansi@7.0.0:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
@@ -3759,7 +3759,7 @@ snapshots:
     dependencies:
       msgpack-lite: 0.1.26
 
-  workerpool@10.0.1: {}
+  workerpool@10.0.2: {}
 
   wrap-ansi@7.0.0:
     dependencies:
