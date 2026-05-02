@@ -52,9 +52,9 @@
     "workerpool": "10.0.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.13",
-    "@commitlint/cli": "^20.5.2",
-    "@commitlint/config-conventional": "^20.5.0",
+    "@biomejs/biome": "^2.4.14",
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
     "@eslint/js": "^9.39.4",
     "eslint": "^9.39.4",
     "eslint-plugin-jsdoc": "^62.9.0",
