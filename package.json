@@ -48,8 +48,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.1",
-    "@commitlint/cli": "^21.1.0",
-    "@commitlint/config-conventional": "^21.1.0",
+    "@commitlint/cli": "^21.2.0",
+    "@commitlint/config-conventional": "^21.2.0",
     "@eslint/js": "^9.39.4",
     "eslint": "^9.39.4",
     "eslint-plugin-jsdoc": "^63.0.10",
@@ -57,6 +57,6 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.0.8",
     "neostandard": "^0.13.0",
-    "prettier": "^3.9.1"
+    "prettier": "^3.9.4"
   }
 }
