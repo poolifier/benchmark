@@ -44,10 +44,10 @@
     "poolifier": "5.3.2",
     "tinypool": "2.1.0",
     "worker-nodes": "2.7.0",
-    "workerpool": "10.0.2"
+    "workerpool": "10.0.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.1",
+    "@biomejs/biome": "^2.5.2",
     "@commitlint/cli": "^21.2.0",
     "@commitlint/config-conventional": "^21.2.0",
     "@eslint/js": "^9.39.4",
