@@ -26,9 +26,9 @@
   },
   "volta": {
     "node": "24.20.0",
-    "pnpm": "12.3.2"
+    "pnpm": "12.3.4"
   },
-  "packageManager": "pnpm@12.3.2",
+  "packageManager": "pnpm@12.3.4",
   "type": "module",
   "scripts": {
     "prepare": "node prepare.mjs",
@@ -55,7 +55,7 @@
     "eslint-plugin-jsdoc": "^64.3.5",
     "eslint-plugin-perfectionist": "^5.11.0",
     "husky": "^9.1.7",
-    "lint-staged": "^17.4.1",
+    "lint-staged": "^17.5.0",
     "neostandard": "^0.13.0",
     "prettier": "^3.9.6"
   }
