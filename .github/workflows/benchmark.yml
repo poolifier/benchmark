@@ -42,5 +42,4 @@ jobs:
           --thresholds-reset \
           --file BENCH.json \
           --err \
-          --github-actions ${{ secrets.GITHUB_TOKEN }} \
           "./bench.sh"
