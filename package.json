@@ -26,9 +26,9 @@
   },
   "volta": {
     "node": "24.21.0",
-    "pnpm": "12.8.1"
+    "pnpm": "12.8.2"
   },
-  "packageManager": "pnpm@12.8.1",
+  "packageManager": "pnpm@12.8.2",
   "type": "module",
   "scripts": {
     "prepare": "node prepare.mjs",
@@ -47,7 +47,7 @@
     "workerpool": "10.0.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.14",
+    "@biomejs/biome": "^2.5.15",
     "@commitlint/cli": "^21.2.3",
     "@commitlint/config-conventional": "^21.2.3",
     "@eslint/js": "^10.0.1",
