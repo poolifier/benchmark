@@ -329,3 +329,13 @@ $RECYCLE.BIN/
 
 BENCH.md
 BENCH.json
+
+# mise local overrides
+mise.local.toml
+mise.*.local.toml
+.mise.local.toml
+.mise.*.local.toml
+mise.local.lock
+mise.*.local.lock
+.mise.local.lock
+.mise.*.local.lock
