@@ -31,7 +31,7 @@
       "onFail": "ignore"
     }
   },
-  "packageManager": "pnpm@12.11.0",
+  "packageManager": "pnpm@12.11.2",
   "type": "module",
   "scripts": {
     "prepare": "node prepare.mjs",
@@ -55,7 +55,7 @@
     "@commitlint/config-conventional": "^21.2.3",
     "@eslint/js": "^10.0.1",
     "eslint": "^10.12.0",
-    "eslint-plugin-jsdoc": "^65.2.1",
+    "eslint-plugin-jsdoc": "^65.2.4",
     "eslint-plugin-perfectionist": "^5.12.1",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
