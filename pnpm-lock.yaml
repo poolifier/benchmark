@@ -204,7 +204,7 @@ importers:
         specifier: ^10.13.0
         version: 10.13.0(jiti@2.6.1)
       eslint-plugin-jsdoc:
-        specifier: ^65.3.12
+        specifier: ^65.3.15
         version: 65.4.0(eslint@10.13.0(jiti@2.6.1))(typescript@6.0.3)
       eslint-plugin-perfectionist:
         specifier: ^5.12.1
