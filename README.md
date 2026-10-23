@@ -12,7 +12,6 @@ To compare poolifier pools performance vs other pools performance we chose to us
 We chose to use this tool because it allows to run isolated Node.js processes so each pool does not impact each other.
 
 - External pools with which we compare the poolifier results:
-
   - [piscina](https://github.com/piscinajs/piscina)
   - [tinypool](https://github.com/tinylibs/tinypool)
   - [workerpool](https://github.com/josdejong/workerpool)
@@ -21,7 +20,6 @@ We chose to use this tool because it allows to run isolated Node.js processes so
   - [nanothreads](https://github.com/snuffyDev/nanothreads)
 
 - External pools with which we used to compare the poolifier results:
-
   - [node-worker-threads-pool](https://github.com/SUCHMOKUO/node-worker-threads-pool): removed because it does not support dynamic modules import or import outside the task function. The task function is expected to be self-contained, which makes it difficult to use in real world application without ugly hacks.
   - [worker-threads-pool](https://github.com/watson/worker-threads-pool): removed because unmaintained since more than 4 years.
   - [threadwork](https://github.com/kevlened/threadwork): removed because unmaintained since more than 3 years.
@@ -33,7 +31,6 @@ We chose to use this tool because it allows to run isolated Node.js processes so
 ## Usage
 
 To run the benchmark versus other worker pools you will need to:
-
 - [Install hyperfine](https://github.com/sharkdp/hyperfine#installation)
 - Clone the [benchmark repository](https://github.com/poolifier/benchmark)
 - Run `pnpm install` in the benchmark cloned repository
