@@ -14,7 +14,7 @@ jobs:
       - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v7
         with:
-          cache: "pnpm"
+          cache: 'pnpm'
       - run: pnpm install --ignore-scripts
       - run: pnpm format
       - uses: autofix-ci/action@7a166d7532b277f34e16238930461bf77f9d7ed8
