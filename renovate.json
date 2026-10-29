@@ -4,20 +4,23 @@
     "config:recommended",
     "abandonments:recommended",
     ":configMigration",
+    "helpers:pinGitHubActionDigests",
+    ":pinDevDependencies",
     "group:allNonMajor",
     "schedule:daily",
     ":maintainLockFilesWeekly",
     "security:minimumReleaseAgeNpm"
   ],
+  "osvVulnerabilityAlerts": true,
+  "vulnerabilityAlerts": {
+    "addLabels": ["security"]
+  },
   "packageRules": [
     {
       "matchFileNames": ["**/package.json"],
-      "matchDepTypes": [
-        "dependencies",
-        "devDependencies",
-        "optionalDependencies"
-      ],
+      "matchDepTypes": ["dependencies", "optionalDependencies"],
       "rangeStrategy": "bump"
     }
-  ]
+  ],
+  "postUpdateOptions": ["pnpmDedupe"]
 }
