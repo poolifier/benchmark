@@ -31,6 +31,7 @@ We chose to use this tool because it allows to run isolated Node.js processes so
 ## Usage
 
 To run the benchmark versus other worker pools you will need to:
+
 - [Install hyperfine](https://github.com/sharkdp/hyperfine#installation)
 - Clone the [benchmark repository](https://github.com/poolifier/benchmark)
 - Run `pnpm install` in the benchmark cloned repository
