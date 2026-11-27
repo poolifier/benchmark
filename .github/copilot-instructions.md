@@ -13,22 +13,22 @@ These instructions guide coding agents to generate changes consistent with this 
 - **Before coding**:
   - Perform a comprehensive inventory of the codebase. Search for and read:
     - README.md, and all other documentation files.
-    - code files related to the task (including `utils.cjs`, `functions/`, `hyperfine_benchmarks.sh`, `bench.sh`).
+    - code files related to the task.
   - Identify existing code architecture, design patterns, canonical defaults, naming patterns and coding styles.
 - **When coding**:
-  - Follow the core principles and JavaScript conventions below.
+  - Follow the core principles and JavaScript/Node.js conventions below.
   - Follow identified design patterns, naming patterns and coding styles.
 - **After coding**:
   - Ensure changes pass quality gates below.
 - **When adding a tunable**:
-  - Add to canonical defaults (`utils.cjs`) with safe value.
-  - Ensure the options/configuration section below is respected.
+  - Add to canonical defaults with safe value.
+  - Ensure the options and configuration section below is respected.
   - Update README.md and `bench.sh` usage documentation.
 - **When adding or changing a benchmark target**:
   - Follow the benchmark conventions below.
 - **When refactoring**:
   - Keep public behavior stable (environment variables, CLI flags, output formats); provide aliases if renaming unless explicitly requested.
-  - Update code, documentation and usage examples atomically.
+  - Update code and documentation atomically.
 - **When documenting**:
   - Follow documentation conventions below.
 
@@ -36,7 +36,7 @@ These instructions guide coding agents to generate changes consistent with this 
 
 - **Design patterns**: prefer established patterns (e.g., factory, singleton, strategy) for code organization and extensibility.
 - **Algorithmic**: prefer algorithms or heuristics solving the problem while minimizing time and space complexity.
-- **DRY**: avoid duplication of logic, data, and naming. Factor out commonalities (e.g., extract shared benchmark boilerplate instead of copying it across scripts).
+- **DRY**: avoid duplication of logic, data, and naming. Factor out commonalities.
 - **Single source of truth**: maintain a canonical defaults map for configuration tunables. Derive all user-facing options automatically.
 - **Naming coherence**: prefer semantically accurate names across code, documentation, directories, and outputs. Avoid synonyms that create ambiguity.
 - **English-only**: code, tests, logs, comments, and documentation must be in English.
@@ -47,8 +47,8 @@ These instructions guide coding agents to generate changes consistent with this 
 ## Options and configuration
 
 - **Dynamic generation**: derive CLI and configuration options automatically from canonical defaults. Avoid manual duplication.
-- **Merge precedence**: canonical defaults (`utils.cjs`) < environment variables (`POOL_SIZE`, `TASK_SIZE`, `TASK_TYPE`, `NUM_ITERATIONS`) < CLI flags (`bench.sh`). Never silently drop user-provided values.
-- **Validation**: enforce constraints (choices, ranges, types) at the option layer with explicit typing (e.g., `Number.parseInt`, range checks) — never rely on truthiness fallbacks for values that are valid falsy.
+- **Merge precedence**: defaults < user options < explicit overrides (highest precedence). Never silently drop user-provided values. In this repository: canonical defaults (`utils.cjs`) < environment variables (`POOL_SIZE`, `TASK_SIZE`, `TASK_TYPE`, `NUM_ITERATIONS`) < CLI flags (`bench.sh`).
+- **Validation**: enforce constraints (choices, ranges, types) at the option layer with explicit typing. Example: `Number.parseInt` with range checks; never rely on truthiness fallbacks for values that are valid falsy.
 - **Help text**: provide concrete examples for complex options, especially override mechanisms.
 
 ## Benchmark conventions
@@ -59,10 +59,10 @@ These instructions guide coding agents to generate changes consistent with this 
 
 ## Reporting conventions
 
-- **Structure**: start with run configuration (pool size, iterations, task type/size, machine), then results; keep a stable section order for comparability.
-- **Format**: export machine-readable JSON (`BENCH.json`) and human-readable markdown (`BENCH.md`); avoid free-form text for data.
+- **Structure**: start with run configuration (pool size, iterations, task type/size, machine), then stable section order for comparability.
+- **Format**: use structured formats (e.g., JSON and markdown exports for `BENCH.json` and `BENCH.md`) for metrics; avoid free-form text for data.
 - **Interpretation**: include threshold guidelines (e.g., bencher latency thresholds); avoid overclaiming certainty.
-- **Artifacts**: timestamp outputs; include run-configuration metadata (node, pnpm, platform, `BENCHER_*` env).
+- **Artifacts**: timestamp outputs; include configuration metadata (node, pnpm, platform, `BENCHER_*` env).
 
 ## Documentation conventions
 
@@ -79,21 +79,21 @@ Documentation serves as an operational specification, not narrative prose.
 
 ## JavaScript conventions
 
-- **Naming**: use camelCase for variables/functions/methods, PascalCase for classes/types (e.g., JSDoc typedefs).
-- **Async operations**: prefer async/await over raw Promises; handle rejections explicitly with try/catch (see `executeAsyncFn` in `utils.cjs`).
-- **Error handling**: throw descriptive errors with structured properties (e.g., `factorial` failures); let the caller decide how to report or exit.
+- **Naming**: Use camelCase for variables/functions/methods, PascalCase for classes/types.
+- **Async operations**: Prefer async/await over raw Promises; handle rejections explicitly with try/catch.
+- **Error handling**: Use descriptive errors with structured properties when applicable.
 - **Module system**: `.cjs` files for CommonJS (worker-nodes), `.mjs` for ECMAScript modules (poolifier, piscina, etc.); do not mix without need.
-- **Worker communication**: keep pools and workers decoupled; task functions receive serializable data and return serializable results; avoid ad-hoc shared state across pools.
-- **Null safety**: avoid non-null assertions; use optional chaining (`?.`) and nullish coalescing (`??`).
-- **Type safety**: prefer JSDoc types over `any`; use explicit types in function signatures.
-- **Promise patterns**: return Promises from async operations; store resolvers/rejectors in Maps for request/response flows.
-- **Immutability**: avoid mutating shared state; clone objects before modification when needed.
-- **Self-contained tasks**: benchmark task functions must be self-contained and thread-safe (see `functions/function-to-bench.cjs`).
+- **Worker communication**: Use decoupled worker<->main thread messaging; task functions receive serializable data and return serializable results; avoid ad-hoc shared state across pools.
+- **Null safety**: Avoid non-null assertions; use optional chaining (`?.`) and nullish coalescing (`??`).
+- **Type safety**: Prefer explicit JSDoc types over `any`; use type guards where appropriate.
+- **Promise patterns**: Return Promises from async operations; store resolvers/rejectors in Maps for request/response flows.
+- **Immutability**: Avoid mutating shared state; clone objects before modification when needed.
+- **Self-contained tasks**: benchmark task functions must be self-contained and thread-safe.
 
 ## Quality gates
 
-- Documented build/format/lint checks pass: `pnpm lint`, `pnpm format`.
-- Smoke benchmark runs: `./bench.sh -i 100 -t CPU_INTENSIVE` (small size; do not run a full benchmark in CI except via the scheduled workflow).
+- Documented build/format/lint checks pass (where applicable).
+- Smoke benchmark runs: `./bench.sh -i 100` (small size; do not run a full benchmark in CI except via the scheduled workflow).
 - Documentation updated to reflect changes when necessary.
 - Logs use appropriate levels (error, warn, info, debug).
 - Pull request title and commit messages follow [Conventional Commits](https://www.conventionalcommits.org/) format.
