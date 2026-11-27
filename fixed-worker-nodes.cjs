@@ -1,15 +1,15 @@
 'use strict'
 const WorkerNodes = require('worker-nodes')
 
-const { BenchmarkDefaults, executeAsyncFn } = require('./utils.cjs')
+const { BenchmarkDefaults, executeAsyncFn, parseIntOr } = require('./utils.cjs')
 
-const size =
-  Number.parseInt(process.env.POOL_SIZE) || BenchmarkDefaults.poolSize
-const numIterations =
-  Number.parseInt(process.env.NUM_ITERATIONS) || BenchmarkDefaults.numIterations
+const size = parseIntOr(process.env.POOL_SIZE, BenchmarkDefaults.poolSize, 1)
+const numIterations = parseIntOr(
+  process.env.NUM_ITERATIONS,
+  BenchmarkDefaults.numIterations
+)
 const data = {
-  taskSize:
-    Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize,
+  taskSize: parseIntOr(process.env.TASK_SIZE, BenchmarkDefaults.taskSize),
   taskType: process.env.TASK_TYPE || BenchmarkDefaults.taskType,
   test: 'MYBENCH',
 }
