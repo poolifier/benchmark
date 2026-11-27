@@ -35,7 +35,7 @@ These instructions guide coding agents to generate changes consistent with this 
 ## Core principles
 
 - **Design patterns**: prefer established patterns (e.g., factory, singleton, strategy) for code organization and extensibility.
-- **Algorithmic**: prefer algorithms solving the problem while minimizing time and space complexity.
+- **Algorithmic**: prefer algorithms or heuristics solving the problem while minimizing time and space complexity.
 - **DRY**: avoid duplication of logic, data, and naming. Factor out commonalities (e.g., extract shared benchmark boilerplate instead of copying it across scripts).
 - **Single source of truth**: maintain a canonical defaults map for configuration tunables. Derive all user-facing options automatically.
 - **Naming coherence**: prefer semantically accurate names across code, documentation, directories, and outputs. Avoid synonyms that create ambiguity.
@@ -59,7 +59,7 @@ These instructions guide coding agents to generate changes consistent with this 
 
 ## Reporting conventions
 
-- **Structure**: start with run configuration (pool size, iterations, task type/size, machine), then results.
+- **Structure**: start with run configuration (pool size, iterations, task type/size, machine), then results; keep a stable section order for comparability.
 - **Format**: export machine-readable JSON (`BENCH.json`) and human-readable markdown (`BENCH.md`); avoid free-form text for data.
 - **Interpretation**: include threshold guidelines (e.g., bencher latency thresholds); avoid overclaiming certainty.
 - **Artifacts**: timestamp outputs; include run-configuration metadata (node, pnpm, platform, `BENCHER_*` env).
@@ -79,7 +79,7 @@ Documentation serves as an operational specification, not narrative prose.
 
 ## JavaScript conventions
 
-- **Naming**: use camelCase for variables/functions/methods, PascalCase for classes/types.
+- **Naming**: use camelCase for variables/functions/methods, PascalCase for classes/types (e.g., JSDoc typedefs).
 - **Async operations**: prefer async/await over raw Promises; handle rejections explicitly with try/catch (see `executeAsyncFn` in `utils.cjs`).
 - **Error handling**: throw descriptive errors with structured properties (e.g., `factorial` failures); let the caller decide how to report or exit.
 - **Module system**: `.cjs` files for CommonJS (worker-nodes), `.mjs` for ECMAScript modules (poolifier, piscina, etc.); do not mix without need.
