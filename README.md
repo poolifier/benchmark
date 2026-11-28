@@ -3,6 +3,7 @@
 ## Table of contents
 
 - [Description](#description)
+- [Measurement modes](#measurement-modes)
 - [Usage](#usage)
 - [Results](#results)
 
@@ -19,6 +20,8 @@ We chose to use this tool because it allows to run isolated Node.js processes so
   - [concurrent.js](https://github.com/bitair-org/concurrent.js)
   - [nanothreads](https://github.com/snuffyDev/nanothreads)
 
+> :information_source: **nanothreads is not currently measured**: the `fixed-nanothreads.mjs` script is present but commented out in `hyperfine_benchmarks.sh`, and no dynamic variant exists. It is listed above for historical reasons.
+
 - External pools with which we used to compare the poolifier results:
   - [node-worker-threads-pool](https://github.com/SUCHMOKUO/node-worker-threads-pool): removed because it does not support dynamic modules import or import outside the task function. The task function is expected to be self-contained, which makes it difficult to use in real world application without ugly hacks.
   - [worker-threads-pool](https://github.com/watson/worker-threads-pool): removed because unmaintained since more than 4 years.
@@ -28,6 +31,13 @@ We chose to use this tool because it allows to run isolated Node.js processes so
 
 > :warning: **We would need funds to run our benchmark more often and on Cloud VMs, please consider to sponsor the poolifier project**
 
+## Measurement modes
+
+Each measured pool has two variants in this repository:
+
+- `dynamic-*.mjs` (or `.cjs`): the pool scales between a minimum of `Math.floor(poolSize / 2)` and the maximum of `poolSize` workers.
+- `fixed-*.mjs` (or `.cjs`): the pool stays at exactly `poolSize` workers.
+
 ## Usage
 
 To run the benchmark versus other worker pools you will need to:
@@ -36,6 +46,7 @@ To run the benchmark versus other worker pools you will need to:
 - Clone the [benchmark repository](https://github.com/poolifier/benchmark)
 - Run `pnpm install` in the benchmark cloned repository
 - Run the `./bench.sh` script
+- Run `pnpm test` for a quick smoke check of every measured pool (one small run per pool; `NUM_ITERATIONS`, `POOL_SIZE`, `TASK_SIZE` and `TASK_TYPE` are honored)
 
 > :warning: **Please be sure to use a quiet PC when you run the benchmark**
 

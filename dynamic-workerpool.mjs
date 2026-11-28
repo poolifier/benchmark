@@ -1,15 +1,16 @@
 import workerpool from 'workerpool'
 
-import { BenchmarkDefaults, executeAsyncFn } from './utils.cjs'
+import { BenchmarkDefaults, executeAsyncFn, parseIntOr } from './utils.cjs'
 
-const size =
-  Number.parseInt(process.env.POOL_SIZE) || BenchmarkDefaults.poolSize
-const numIterations =
-  Number.parseInt(process.env.NUM_ITERATIONS) || BenchmarkDefaults.numIterations
+const size = parseIntOr(process.env.POOL_SIZE, BenchmarkDefaults.poolSize, 1)
+const numIterations = parseIntOr(
+  process.env.NUM_ITERATIONS,
+  BenchmarkDefaults.numIterations
+)
 const dataArray = [
   'MYBENCH',
   process.env.TASK_TYPE || BenchmarkDefaults.taskType,
-  Number.parseInt(process.env.TASK_SIZE) || BenchmarkDefaults.taskSize,
+  parseIntOr(process.env.TASK_SIZE, BenchmarkDefaults.taskSize),
 ]
 
 const workerPool = workerpool.pool(
